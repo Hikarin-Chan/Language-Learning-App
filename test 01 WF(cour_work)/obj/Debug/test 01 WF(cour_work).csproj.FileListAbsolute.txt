@@ -8,3 +8,24 @@ D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\obj\
 D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\obj\Debug\test 01 WF(cour_work).csproj.CoreCompileInputs.cache
 D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\obj\Debug\test 01 WF(cour_work).exe
 D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\obj\Debug\test 01 WF(cour_work).pdb
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Buffers.dll
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.IO.Pipelines.dll
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Memory.dll
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Numerics.Vectors.dll
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Text.Encodings.Web.dll
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Text.Json.dll
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.ValueTuple.dll
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Buffers.xml
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.IO.Pipelines.xml
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Memory.xml
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Numerics.Vectors.xml
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Text.Encodings.Web.xml
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Text.Json.xml
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.ValueTuple.xml
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\obj\Debug\test 01 .FDFB98C0.Up2Date

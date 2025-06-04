@@ -42,7 +42,7 @@
       this.Проверить.TabIndex = 0;
       this.Проверить.Text = "Проверить";
       this.Проверить.UseVisualStyleBackColor = true;
-      this.Проверить.Click += new System.EventHandler(this.button1_Click);
+      this.Проверить.Click += new System.EventHandler(this.check_Click);
       // 
       // label1
       // 
@@ -68,7 +68,7 @@
       this.button2.TabIndex = 3;
       this.button2.Text = "Дальше";
       this.button2.UseVisualStyleBackColor = true;
-      this.button2.Click += new System.EventHandler(this.button2_Click);
+      this.button2.Click += new System.EventHandler(this.next_Click);
       // 
       // Form1
       // 

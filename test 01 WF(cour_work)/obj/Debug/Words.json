@@ -1,0 +1,42 @@
+[
+  { "english": "Dog", "russian": "Собака", "transcription": "[sɐˈbakə]" },
+  { "english": "Cat", "russian": "Кошка", "transcription": "[ˈkoʂkə]" },
+  { "english": "Bird", "russian": "Птица", "transcription": "[ˈptʲit͡sə]" },
+  { "english": "Fish", "russian": "Рыба", "transcription": "[ˈrɨbə]" },
+  { "english": "Horse", "russian": "Лошадь", "transcription": "[ˈloʂɨtʲ]" },
+  { "english": "Cow", "russian": "Корова", "transcription": "[kɐˈrovə]" },
+  { "english": "Sheep", "russian": "Овца", "transcription": "[ɐfˈtsɑ]" },
+  { "english": "Pig", "russian": "Свинья", "transcription": "[svʲɪnˈja]" },
+  { "english": "Chicken", "russian": "Курица", "transcription": "[ˈkurʲɪtsə]" },
+  { "english": "Duck", "russian": "Утка", "transcription": "[ˈutkə]" },
+  { "english": "Goat", "russian": "Коза", "transcription": "[kɐˈza]" },
+  { "english": "Rabbit", "russian": "Кролик", "transcription": "[ˈkrolʲɪk]" },
+  { "english": "Frog", "russian": "Лягушка", "transcription": "[lʲɪˈguʂkə]" },
+  { "english": "Snake", "russian": "Змея", "transcription": "[zmʲɪˈja]" },
+  {
+    "english": "Turtle",
+    "russian": "Черепаха",
+    "transcription": "[t͡ɕɪrʲɪˈpaxə]"
+  },
+  { "english": "Bear", "russian": "Медведь", "transcription": "[mʲɪdˈvʲetʲ]" },
+  { "english": "Lion", "russian": "Лев", "transcription": "[lʲef]" },
+  { "english": "Tiger", "russian": "Тигр", "transcription": "[ˈtʲiɡr]" },
+  { "english": "Elephant", "russian": "Слон", "transcription": "[slon]" },
+  {
+    "english": "Monkey",
+    "russian": "Обезьяна",
+    "transcription": "[ɐbʲɪˈzʲjænə]"
+  },
+  { "english": "Giraffe", "russian": "Жираф", "transcription": "[ʒɨˈraf]" },
+  { "english": "Zebra", "russian": "Зебра", "transcription": "[ˈzʲebrɐ]" },
+  {
+    "english": "Kangaroo",
+    "russian": "Кенгуру",
+    "transcription": "[kʲɪnɡuˈru]"
+  },
+  { "english": "Panda", "russian": "Панда", "transcription": "[ˈpandə]" },
+  { "english": "Koala", "russian": "Коала", "transcription": "[kɐˈalə]" },
+  { "english": "Wolf", "russian": "Волк", "transcription": "[volk]" },
+  { "english": "Fox", "russian": "Лиса", "transcription": "[lʲiˈsa]" },
+  { "english": "Deer", "russian": "Олень", "transcription": "[ɐˈlʲenʲ]" }
+]

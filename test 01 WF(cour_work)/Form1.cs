@@ -8,6 +8,8 @@ using System.Net.Configuration;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.Json;
+using System.IO;
 
 namespace test_01_WF_cour_work_
 {
@@ -16,48 +18,50 @@ namespace test_01_WF_cour_work_
     public Form1()
     {
       InitializeComponent();
-      InitialData();
+      ShowNextWord();
+      LoadData();
     }
 
-    public void InitialData()
-    {
-      // Инициализация данных, если необходимо
-      // Например, можно заполнить элементы управления данными
-      // или выполнить другие начальные настройки
-      label1.Text = words[0,0];
-    }
-    
-    public int index = 0;
-    public string[,] words = { 
-      {"Dog", "собака" },
-      {"Car","машина" } 
-    };
+    private int currentWordIndex = 0;
+    private List<Word> words;
 
-    private void button1_Click(object sender, EventArgs e)
+    private void LoadData()
     {
-      if (textBox1.Text.ToLower().Equals(words[index, 1]))
+      string jsonFilePath = "words.json";
+      if (File.Exists(jsonFilePath))
       {
-        MessageBox.Show("Правильно!");
+        string jsonData = File.ReadAllText(jsonFilePath);
+        words = JsonSerializer.Deserialize<List<Word>>(jsonData);
       }
       else
       {
-        MessageBox.Show("Неправильно, попробуйте еще раз.");
-      } 
-    }
-
-    private void button2_Click(object sender, EventArgs e)
-    {
-      index++;
-
-      if (index >= words.Length / 2)
-      {
-        index = 0;
-        MessageBox.Show("Вы завершили тест!!!");
-        return;
+        MessageBox.Show("Файл с данными не найден.");
       }
-
-      textBox1.Clear();
-      label1.Text = words[index, 0];
     }
+
+    public void ShowNextWord()
+    {
+      label1.Text = words[currentWordIndex].English;
+      textBox1.Clear();
+    }
+
+    private void check_Click(object sender, EventArgs e)
+    {
+      MessageBox.Show(textBox1.Text.ToLower().Trim() == words[currentWordIndex].Russian.ToLower() ? "Правильно!" : "Неправильно!");
+    }
+
+    private void next_Click(object sender, EventArgs e)
+    {
+      if (currentWordIndex < words.Count - 1)
+      {
+        currentWordIndex++;
+        ShowNextWord();
+      }
+      else
+      {
+        MessageBox.Show("Вы завершили все тесты!!!");
+        currentWordIndex = 0;
+      }
+    }    // add label for transcription, test code
   }
 }
