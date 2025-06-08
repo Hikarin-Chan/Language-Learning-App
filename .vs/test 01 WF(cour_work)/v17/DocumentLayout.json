@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|d:\\code\\csharp\\windows form app\\test 01 wf(cour_work)\\test 01 wf(cour_work)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|solutionrelative:test 01 wf(cour_work)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|d:\\code\\csharp\\windows form app\\test 01 wf(cour_work)\\test 01 wf(cour_work)\\flashcardsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|solutionrelative:test 01 wf(cour_work)\\flashcardsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|d:\\code\\csharp\\windows form app\\test 01 wf(cour_work)\\test 01 wf(cour_work)\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|solutionrelative:test 01 wf(cour_work)\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|d:\\code\\csharp\\windows form app\\test 01 wf(cour_work)\\test 01 wf(cour_work)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|solutionrelative:test 01 wf(cour_work)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 wf(cour_work)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|solutionrelative:test 01 wf(cour_work)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|d:\\code\\csharp\\windows form app\\test 01 wf(cour_work)\\test 01 wf(cour_work)\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|solutionrelative:test 01 wf(cour_work)\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|d:\\code\\csharp\\windows form app\\test 01 wf(cour_work)\\test 01 wf(cour_work)\\flashcardsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|solutionrelative:test 01 wf(cour_work)\\flashcardsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|d:\\code\\csharp\\windows form app\\test 01 wf(cour_work)\\test 01 wf(cour_work)\\flashcardsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|solutionrelative:test 01 wf(cour_work)\\flashcardsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 wf(cour_work)\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|solutionrelative:test 01 wf(cour_work)\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|d:\\code\\csharp\\windows form app\\test 01 wf(cour_work)\\test 01 wf(cour_work)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561042CA-4BB5-49BC-B3EC-A145B9B49F78}|test 01 WF(cour_work)\\test 01 WF(cour_work).csproj|solutionrelative:test 01 wf(cour_work)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,48 +37,9 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 211,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 214,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Word.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\Word.cs",
-              "RelativeDocumentMoniker": "test 01 WF(cour_work)\\Word.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\Word.cs",
-              "RelativeToolTip": "test 01 WF(cour_work)\\Word.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T20:43:29.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "test 01 WF(cour_work)\\Form1.Designer.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\Form1.Designer.cs",
-              "RelativeToolTip": "test 01 WF(cour_work)\\Form1.Designer.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowEYAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T20:01:33.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\Form1.cs",
-              "RelativeDocumentMoniker": "test 01 WF(cour_work)\\Form1.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\Form1.cs",
-              "RelativeToolTip": "test 01 WF(cour_work)\\Form1.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAiwEAAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T17:49:53.971Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -77,17 +50,97 @@
               "RelativeToolTip": "test 01 WF(cour_work)\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T17:45:26.991Z",
+              "IsPinned": true,
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FlashCardsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\FlashCardsForm.cs",
+              "RelativeDocumentMoniker": "test 01 WF(cour_work)\\FlashCardsForm.cs",
+              "ToolTip": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\FlashCardsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "test 01 WF(cour_work)\\FlashCardsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T13:37:23.691Z",
+              "IsPinned": true,
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\Form1.cs",
+              "RelativeDocumentMoniker": "test 01 WF(cour_work)\\Form1.cs",
+              "ToolTip": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\Form1.cs",
+              "RelativeToolTip": "test 01 WF(cour_work)\\Form1.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T17:49:53.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FlashCardsForm.cs",
+              "DocumentMoniker": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\FlashCardsForm.cs",
+              "RelativeDocumentMoniker": "test 01 WF(cour_work)\\FlashCardsForm.cs",
+              "ToolTip": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\FlashCardsForm.cs",
+              "RelativeToolTip": "test 01 WF(cour_work)\\FlashCardsForm.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowC8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T13:50:23.359Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 253,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 208,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "test 01 WF(cour_work)\\Form1.Designer.cs",
+              "ToolTip": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\Form1.Designer.cs",
+              "RelativeToolTip": "test 01 WF(cour_work)\\Form1.Designer.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAmwHgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T20:01:33.908Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\Program.cs",
+              "RelativeDocumentMoniker": "test 01 WF(cour_work)\\Program.cs",
+              "ToolTip": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\Program.cs",
+              "RelativeToolTip": "test 01 WF(cour_work)\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T13:40:01.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FlashCardsForm.Designer.cs",
+              "DocumentMoniker": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\FlashCardsForm.Designer.cs",
+              "RelativeDocumentMoniker": "test 01 WF(cour_work)\\FlashCardsForm.Designer.cs",
+              "ToolTip": "D:\\Code\\Csharp\\Windows Form App\\test 01 WF(cour_work)\\test 01 WF(cour_work)\\FlashCardsForm.Designer.cs",
+              "RelativeToolTip": "test 01 WF(cour_work)\\FlashCardsForm.Designer.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowD8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T13:38:27.493Z",
+              "EditorCaption": ""
             }
           ]
         }

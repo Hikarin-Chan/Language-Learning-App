@@ -29,3 +29,4 @@ D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\
 D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\System.ValueTuple.xml
 D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\obj\Debug\test 01 .FDFB98C0.Up2Date
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\obj\Debug\test_01_WF_cour_work_.FlashCardsForm.resources

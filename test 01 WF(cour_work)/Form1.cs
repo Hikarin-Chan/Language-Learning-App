@@ -18,8 +18,8 @@ namespace test_01_WF_cour_work_
     public Form1()
     {
       InitializeComponent();
-      ShowNextWord();
       LoadData();
+      ShowNextWord();
     }
 
     private int currentWordIndex = 0;
@@ -27,7 +27,7 @@ namespace test_01_WF_cour_work_
 
     private void LoadData()
     {
-      string jsonFilePath = "words.json";
+      string jsonFilePath = "Words.json";
       if (File.Exists(jsonFilePath))
       {
         string jsonData = File.ReadAllText(jsonFilePath);
@@ -35,22 +35,33 @@ namespace test_01_WF_cour_work_
       }
       else
       {
-        MessageBox.Show("Файл с данными не найден.");
+        MessageBox.Show("Data file not found.");
       }
     }
 
     public void ShowNextWord()
     {
-      label1.Text = words[currentWordIndex].English;
-      textBox1.Clear();
+      EWord.Text = words[currentWordIndex].english;
+      TOfWord.Text = words[currentWordIndex].transcription;
+      AnswerLine.Clear();
     }
 
-    private void check_Click(object sender, EventArgs e)
+    private void Check_Click(object sender, EventArgs e)
     {
-      MessageBox.Show(textBox1.Text.ToLower().Trim() == words[currentWordIndex].Russian.ToLower() ? "Правильно!" : "Неправильно!");
+      if (AnswerLine.Text.ToLower().Trim() == words[currentWordIndex].russian.ToLower())
+      {
+        MessageBox.Show("Currect answer!");
+        Next_Click(sender, e);
+      }
+      else
+      {
+        MessageBox.Show("Incurrect answer!");
+        Tip.Text = "Forgot the word? Use flashcards!";
+        AnswerLine.Clear();
+      }
     }
 
-    private void next_Click(object sender, EventArgs e)
+    private void Next_Click(object sender, EventArgs e)
     {
       if (currentWordIndex < words.Count - 1)
       {
@@ -62,6 +73,17 @@ namespace test_01_WF_cour_work_
         MessageBox.Show("Вы завершили все тесты!!!");
         currentWordIndex = 0;
       }
-    }    // add label for transcription, test code
+    }
+
+    private void Flashcards_Click(object sender, EventArgs e)
+    {
+      FlashCardsForm flashCardsForm = new FlashCardsForm(words, currentWordIndex);
+      flashCardsForm.ShowDialog();
+    }
+
+    private void Exit_Click(object sender, EventArgs e)
+    {
+      Application.Exit();
+    }
   }
 }

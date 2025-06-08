@@ -28,57 +28,125 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.Проверить = new System.Windows.Forms.Button();
-      this.label1 = new System.Windows.Forms.Label();
-      this.textBox1 = new System.Windows.Forms.TextBox();
-      this.button2 = new System.Windows.Forms.Button();
+      this.Check = new System.Windows.Forms.Button();
+      this.EWord = new System.Windows.Forms.Label();
+      this.AnswerLine = new System.Windows.Forms.TextBox();
+      this.Next = new System.Windows.Forms.Button();
+      this.TOfWord = new System.Windows.Forms.Label();
+      this.EnglishWord = new System.Windows.Forms.Label();
+      this.Transcription = new System.Windows.Forms.Label();
+      this.Tip = new System.Windows.Forms.Label();
+      this.Flashcards = new System.Windows.Forms.Button();
+      this.Exit = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
-      // Проверить
+      // Check
       // 
-      this.Проверить.Location = new System.Drawing.Point(489, 381);
-      this.Проверить.Name = "Проверить";
-      this.Проверить.Size = new System.Drawing.Size(75, 23);
-      this.Проверить.TabIndex = 0;
-      this.Проверить.Text = "Проверить";
-      this.Проверить.UseVisualStyleBackColor = true;
-      this.Проверить.Click += new System.EventHandler(this.check_Click);
+      this.Check.Location = new System.Drawing.Point(492, 399);
+      this.Check.Name = "Check";
+      this.Check.Size = new System.Drawing.Size(75, 23);
+      this.Check.TabIndex = 0;
+      this.Check.Text = "Check";
+      this.Check.UseVisualStyleBackColor = true;
+      this.Check.Click += new System.EventHandler(this.Check_Click);
       // 
-      // label1
+      // EWord
       // 
-      this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(509, 338);
-      this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(35, 13);
-      this.label1.TabIndex = 1;
-      this.label1.Text = "label1";
+      this.EWord.AutoSize = true;
+      this.EWord.Location = new System.Drawing.Point(509, 338);
+      this.EWord.Name = "EWord";
+      this.EWord.Size = new System.Drawing.Size(0, 13);
+      this.EWord.TabIndex = 1;
       // 
-      // textBox1
+      // AnswerLine
       // 
-      this.textBox1.Location = new System.Drawing.Point(644, 331);
-      this.textBox1.Name = "textBox1";
-      this.textBox1.Size = new System.Drawing.Size(100, 20);
-      this.textBox1.TabIndex = 2;
+      this.AnswerLine.Location = new System.Drawing.Point(644, 331);
+      this.AnswerLine.Name = "AnswerLine";
+      this.AnswerLine.Size = new System.Drawing.Size(100, 20);
+      this.AnswerLine.TabIndex = 2;
       // 
-      // button2
+      // Next
       // 
-      this.button2.Location = new System.Drawing.Point(659, 381);
-      this.button2.Name = "button2";
-      this.button2.Size = new System.Drawing.Size(75, 23);
-      this.button2.TabIndex = 3;
-      this.button2.Text = "Дальше";
-      this.button2.UseVisualStyleBackColor = true;
-      this.button2.Click += new System.EventHandler(this.next_Click);
+      this.Next.Location = new System.Drawing.Point(658, 399);
+      this.Next.Name = "Next";
+      this.Next.Size = new System.Drawing.Size(75, 23);
+      this.Next.TabIndex = 3;
+      this.Next.Text = "Next";
+      this.Next.UseVisualStyleBackColor = true;
+      this.Next.Click += new System.EventHandler(this.Next_Click);
+      // 
+      // TOfWord
+      // 
+      this.TOfWord.AutoSize = true;
+      this.TOfWord.Location = new System.Drawing.Point(509, 365);
+      this.TOfWord.Name = "TOfWord";
+      this.TOfWord.Size = new System.Drawing.Size(0, 13);
+      this.TOfWord.TabIndex = 4;
+      // 
+      // EnglishWord
+      // 
+      this.EnglishWord.AutoSize = true;
+      this.EnglishWord.Location = new System.Drawing.Point(426, 331);
+      this.EnglishWord.Name = "EnglishWord";
+      this.EnglishWord.Size = new System.Drawing.Size(67, 13);
+      this.EnglishWord.TabIndex = 5;
+      this.EnglishWord.Text = "English word";
+      // 
+      // Transcription
+      // 
+      this.Transcription.AutoSize = true;
+      this.Transcription.Location = new System.Drawing.Point(425, 365);
+      this.Transcription.Name = "Transcription";
+      this.Transcription.Size = new System.Drawing.Size(68, 13);
+      this.Transcription.TabIndex = 6;
+      this.Transcription.Text = "Transcription";
+      // 
+      // Tip
+      // 
+      this.Tip.AutoSize = true;
+      this.Tip.Location = new System.Drawing.Point(426, 304);
+      this.Tip.Name = "Tip";
+      this.Tip.Size = new System.Drawing.Size(0, 13);
+      this.Tip.TabIndex = 7;
+      // 
+      // Flashcards
+      // 
+      this.Flashcards.Location = new System.Drawing.Point(12, 12);
+      this.Flashcards.Name = "Flashcards";
+      this.Flashcards.Size = new System.Drawing.Size(75, 23);
+      this.Flashcards.TabIndex = 8;
+      this.Flashcards.Text = "Flashcards";
+      this.Flashcards.UseVisualStyleBackColor = true;
+      this.Flashcards.Click += new System.EventHandler(this.Flashcards_Click);
+      // 
+      // Exit
+      // 
+      this.Exit.AutoSize = true;
+      this.Exit.Location = new System.Drawing.Point(575, 399);
+      this.Exit.Name = "Exit";
+      this.Exit.Size = new System.Drawing.Size(75, 23);
+      this.Exit.TabIndex = 9;
+      this.Exit.Text = "Exit";
+      this.Exit.UseVisualStyleBackColor = true;
+      this.Exit.Click += new System.EventHandler(this.Exit_Click);
       // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.AutoSize = true;
       this.ClientSize = new System.Drawing.Size(1269, 681);
-      this.Controls.Add(this.button2);
-      this.Controls.Add(this.textBox1);
-      this.Controls.Add(this.label1);
-      this.Controls.Add(this.Проверить);
+      this.Controls.Add(this.Exit);
+      this.Controls.Add(this.Flashcards);
+      this.Controls.Add(this.Tip);
+      this.Controls.Add(this.Transcription);
+      this.Controls.Add(this.EnglishWord);
+      this.Controls.Add(this.TOfWord);
+      this.Controls.Add(this.Next);
+      this.Controls.Add(this.AnswerLine);
+      this.Controls.Add(this.EWord);
+      this.Controls.Add(this.Check);
+      this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
       this.Name = "Form1";
       this.Text = "Form1";
       this.ResumeLayout(false);
@@ -88,10 +156,16 @@
 
     #endregion
 
-    private System.Windows.Forms.Button Проверить;
-    private System.Windows.Forms.Label label1;
-    private System.Windows.Forms.TextBox textBox1;
-    private System.Windows.Forms.Button button2;
+    private System.Windows.Forms.Button Check;
+    private System.Windows.Forms.Label EWord;
+    private System.Windows.Forms.TextBox AnswerLine;
+    private System.Windows.Forms.Button Next;
+    private System.Windows.Forms.Label TOfWord;
+    private System.Windows.Forms.Label EnglishWord;
+    private System.Windows.Forms.Label Transcription;
+    private System.Windows.Forms.Label Tip;
+    private System.Windows.Forms.Button Flashcards;
+    private System.Windows.Forms.Button Exit;
   }
 }
 
