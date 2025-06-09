@@ -11,18 +11,24 @@ using System.Windows.Forms;
 
 namespace test_01_WF_cour_work_
 {
-  public partial class FlashCardsForm : Form
+  public partial class flashCardsForm : Form
   {
     
-    internal FlashCardsForm(List<Word> words, int currentWordIndex)
+    private int currentWordIndex;
+    List<Word> words;
+
+    internal flashCardsForm(List<Word> words, int currentWordIndex)
     {
       InitializeComponent();
       this.words = words;
-      WordOrig.Text = words[currentWordIndex].english;
-      TranslateWord.Text = words[currentWordIndex].russian;
+      this.currentWordIndex = currentWordIndex;
     }
 
-    List<Word> words;
+    public flashCardsForm()
+    {
+      InitializeComponent();
+    }
+
 
     private void FlashCardsForm_Load(object sender, EventArgs e)
     {
@@ -39,62 +45,29 @@ namespace test_01_WF_cour_work_
       }
     }
 
-    private void SearchWords_Click(object sender, EventArgs e)
-    {
-      string searchText = SearchPannel.Text.ToLower().Trim()??"";
-      var results = words.Where(w => w.english.ToLower().Contains(searchText) || w.russian.ToLower().Contains(searchText)).ToList();
 
-      if (results.Count > 0)
+    private void button1_Click(object sender, EventArgs e)
+    {
+      int width = flashTranslate.Size.Width;
+      for (int i = 0; i < width; i++)
       {
-        ResOfSearch.Text = "Search Results:\n----------------";
-        ResOfSearch.Visible = true;
-        foreach (var result in results)
+        flashTranslate.Size = new Size(flashTranslate.Size.Width - 1, flashTranslate.Size.Height);
+        if (i % 2 == 0)
         {
-          ResOfSearch.Text += $"\nEnglish: {result.english}, \nRussian: {result.russian}, \nTranacription: {result.transcription}";
+          flashTranslate.Location = new Point(flashTranslate.Location.X + 1, flashTranslate.Location.Y);
         }
       }
-      else
+
+      flashTranslate.Text = words[currentWordIndex].english;
+
+      for (int i = 0; i < width; i++)
       {
-        ResOfSearch.Text = "No results found.";
-        ResOfSearch.Visible = true;
+        flashTranslate.Size = new Size(flashTranslate.Size.Width + 1, flashTranslate.Size.Height);
+        if (i % 2 == 0)
+        {
+          flashTranslate.Location = new Point(flashTranslate.Location.X - 1, flashTranslate.Location.Y);
+        }
       }
-    }
-
-    private void ShowMoreFC_Click(object sender, EventArgs e)
-    {
-      WordOrig.Visible = false;
-      TipForYou.Visible = false;
-      Space.Visible = false;
-      SearchPannel.Visible = true;
-      ShowMore.Visible = false;
-      Search.Visible = true;
-
-      TranslateWord.Location = new Point(220, 140);
-      SearchPannel.Location = new Point(220, 170);
-      Search.Location = new Point(220, 200);
-      CloseWin.Location = new Point(220, 230);
-
-      TranslateWord.Text = "Enter search word:";
-    }
-
-    private void CloseWin_Click(object sender, EventArgs e)
-    {
-      Hide();
-
-      TipForYou.Visible = true;
-      WordOrig.Visible = true;
-      Space.Visible = true;
-      SearchPannel.Visible = false;
-      ResOfSearch.Visible = false;
-      Search.Visible = false;
-      ShowMore.Visible = true;
-
-      TranslateWord.Location = new Point(280, 180);
-      SearchPannel.Location = new Point(1, 1);
-      Search.Location = new Point(1, 25);
-      CloseWin.Location = new Point(150, 200);
-
-      TranslateWord.Text = "";
     }
   }
 }

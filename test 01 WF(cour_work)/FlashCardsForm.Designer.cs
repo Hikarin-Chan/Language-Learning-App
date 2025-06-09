@@ -1,6 +1,6 @@
 ﻿namespace test_01_WF_cour_work_
 {
-  partial class FlashCardsForm
+  partial class flashCardsForm
   {
     /// <summary>
     /// Required designer variable.
@@ -28,135 +28,93 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.WordOrig = new System.Windows.Forms.Label();
-      this.TranslateWord = new System.Windows.Forms.Label();
-      this.CloseWin = new System.Windows.Forms.Button();
-      this.ShowMore = new System.Windows.Forms.Button();
-      this.Space = new System.Windows.Forms.Label();
-      this.SearchPannel = new System.Windows.Forms.TextBox();
-      this.ResOfSearch = new System.Windows.Forms.Label();
-      this.Search = new System.Windows.Forms.Button();
-      this.TipForYou = new System.Windows.Forms.Label();
+      this.flashCardPanel = new System.Windows.Forms.Panel();
+      this.flashCardOrig = new System.Windows.Forms.Button();
+      this.flashTranslate = new System.Windows.Forms.Button();
+      this.rightArrow = new FontAwesome.Sharp.IconPictureBox();
+      this.flashCardPanel.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.rightArrow)).BeginInit();
       this.SuspendLayout();
       // 
-      // WordOrig
+      // flashCardPanel
       // 
-      this.WordOrig.AutoSize = true;
-      this.WordOrig.Location = new System.Drawing.Point(150, 180);
-      this.WordOrig.Name = "WordOrig";
-      this.WordOrig.Size = new System.Drawing.Size(0, 13);
-      this.WordOrig.TabIndex = 0;
+      this.flashCardPanel.AutoSize = true;
+      this.flashCardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(134)))));
+      this.flashCardPanel.Controls.Add(this.rightArrow);
+      this.flashCardPanel.Controls.Add(this.flashCardOrig);
+      this.flashCardPanel.Controls.Add(this.flashTranslate);
+      this.flashCardPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.flashCardPanel.Location = new System.Drawing.Point(0, 0);
+      this.flashCardPanel.Margin = new System.Windows.Forms.Padding(0);
+      this.flashCardPanel.Name = "flashCardPanel";
+      this.flashCardPanel.Padding = new System.Windows.Forms.Padding(10);
+      this.flashCardPanel.Size = new System.Drawing.Size(800, 500);
+      this.flashCardPanel.TabIndex = 9;
       // 
-      // TranslateWord
+      // flashCardOrig
       // 
-      this.TranslateWord.AutoSize = true;
-      this.TranslateWord.Location = new System.Drawing.Point(275, 180);
-      this.TranslateWord.Name = "TranslateWord";
-      this.TranslateWord.Size = new System.Drawing.Size(0, 13);
-      this.TranslateWord.TabIndex = 1;
+      this.flashCardOrig.Anchor = System.Windows.Forms.AnchorStyles.None;
+      this.flashCardOrig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
+      this.flashCardOrig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.flashCardOrig.Location = new System.Drawing.Point(165, 120);
+      this.flashCardOrig.Name = "flashCardOrig";
+      this.flashCardOrig.Size = new System.Drawing.Size(175, 260);
+      this.flashCardOrig.TabIndex = 11;
+      this.flashCardOrig.UseVisualStyleBackColor = false;
       // 
-      // CloseWin
+      // flashTranslate
       // 
-      this.CloseWin.Location = new System.Drawing.Point(150, 200);
-      this.CloseWin.Name = "CloseWin";
-      this.CloseWin.Size = new System.Drawing.Size(75, 25);
-      this.CloseWin.TabIndex = 2;
-      this.CloseWin.Text = "Close";
-      this.CloseWin.UseVisualStyleBackColor = true;
-      this.CloseWin.Click += new System.EventHandler(this.CloseWin_Click);
+      this.flashTranslate.Anchor = System.Windows.Forms.AnchorStyles.None;
+      this.flashTranslate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
+      this.flashTranslate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.flashTranslate.Location = new System.Drawing.Point(460, 120);
+      this.flashTranslate.Name = "flashTranslate";
+      this.flashTranslate.Size = new System.Drawing.Size(175, 260);
+      this.flashTranslate.TabIndex = 10;
+      this.flashTranslate.UseVisualStyleBackColor = false;
+      this.flashTranslate.Click += new System.EventHandler(this.button1_Click);
       // 
-      // ShowMore
+      // rightArrow
       // 
-      this.ShowMore.Location = new System.Drawing.Point(275, 200);
-      this.ShowMore.Name = "ShowMore";
-      this.ShowMore.Size = new System.Drawing.Size(75, 25);
-      this.ShowMore.TabIndex = 3;
-      this.ShowMore.Text = "Show more";
-      this.ShowMore.UseVisualStyleBackColor = true;
-      this.ShowMore.Click += new System.EventHandler(this.ShowMoreFC_Click);
+      this.rightArrow.Anchor = System.Windows.Forms.AnchorStyles.None;
+      this.rightArrow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(134)))));
+      this.rightArrow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+      this.rightArrow.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
+      this.rightArrow.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+      this.rightArrow.IconFont = FontAwesome.Sharp.IconFont.Solid;
+      this.rightArrow.IconSize = 40;
+      this.rightArrow.Location = new System.Drawing.Point(380, 230);
+      this.rightArrow.Name = "rightArrow";
+      this.rightArrow.Padding = new System.Windows.Forms.Padding(2);
+      this.rightArrow.Size = new System.Drawing.Size(40, 40);
+      this.rightArrow.TabIndex = 12;
+      this.rightArrow.TabStop = false;
       // 
-      // Space
-      // 
-      this.Space.AutoSize = true;
-      this.Space.Location = new System.Drawing.Point(235, 180);
-      this.Space.Name = "Space";
-      this.Space.Size = new System.Drawing.Size(31, 13);
-      this.Space.TabIndex = 4;
-      this.Space.Text = "--------";
-      // 
-      // SearchPannel
-      // 
-      this.SearchPannel.Location = new System.Drawing.Point(1, 1);
-      this.SearchPannel.Name = "SearchPannel";
-      this.SearchPannel.Size = new System.Drawing.Size(100, 20);
-      this.SearchPannel.TabIndex = 5;
-      this.SearchPannel.Visible = false;
-      // 
-      // ResOfSearch
-      // 
-      this.ResOfSearch.AutoSize = true;
-      this.ResOfSearch.Dock = System.Windows.Forms.DockStyle.Right;
-      this.ResOfSearch.Location = new System.Drawing.Point(494, 0);
-      this.ResOfSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-      this.ResOfSearch.MaximumSize = new System.Drawing.Size(150, 400);
-      this.ResOfSearch.Name = "ResOfSearch";
-      this.ResOfSearch.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-      this.ResOfSearch.Size = new System.Drawing.Size(6, 23);
-      this.ResOfSearch.TabIndex = 6;
-      this.ResOfSearch.Visible = false;
-      // 
-      // Search
-      // 
-      this.Search.Location = new System.Drawing.Point(1, 25);
-      this.Search.Name = "Search";
-      this.Search.Size = new System.Drawing.Size(75, 25);
-      this.Search.TabIndex = 7;
-      this.Search.Text = "Search";
-      this.Search.UseVisualStyleBackColor = true;
-      this.Search.Visible = false;
-      this.Search.Click += new System.EventHandler(this.SearchWords_Click);
-      // 
-      // TipForYou
-      // 
-      this.TipForYou.AutoSize = true;
-      this.TipForYou.Location = new System.Drawing.Point(220, 153);
-      this.TipForYou.Name = "TipForYou";
-      this.TipForYou.Size = new System.Drawing.Size(65, 13);
-      this.TipForYou.TabIndex = 8;
-      this.TipForYou.Text = "Your word is";
-      // 
-      // FlashCardsForm
+      // flashCardsForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(500, 400);
-      this.Controls.Add(this.TipForYou);
-      this.Controls.Add(this.Search);
-      this.Controls.Add(this.ResOfSearch);
-      this.Controls.Add(this.SearchPannel);
-      this.Controls.Add(this.Space);
-      this.Controls.Add(this.ShowMore);
-      this.Controls.Add(this.CloseWin);
-      this.Controls.Add(this.TranslateWord);
-      this.Controls.Add(this.WordOrig);
-      this.Name = "FlashCardsForm";
+      this.AutoSize = true;
+      this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.ClientSize = new System.Drawing.Size(800, 500);
+      this.Controls.Add(this.flashCardPanel);
+      this.ForeColor = System.Drawing.SystemColors.Control;
+      this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+      this.Name = "flashCardsForm";
+      this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "FlashCardsForm";
       this.Load += new System.EventHandler(this.FlashCardsForm_Load);
+      this.flashCardPanel.ResumeLayout(false);
+      ((System.ComponentModel.ISupportInitialize)(this.rightArrow)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
 
     }
 
     #endregion
-
-    private System.Windows.Forms.Label WordOrig;
-    private System.Windows.Forms.Label TranslateWord;
-    private System.Windows.Forms.Button CloseWin;
-    private System.Windows.Forms.Button ShowMore;
-    private System.Windows.Forms.TextBox SearchPannel;
-    internal System.Windows.Forms.Label Space;
-    public System.Windows.Forms.Label ResOfSearch;
-    private System.Windows.Forms.Button Search;
-    internal System.Windows.Forms.Label TipForYou;
+    private System.Windows.Forms.Panel flashCardPanel;
+    private System.Windows.Forms.Button flashTranslate;
+    private System.Windows.Forms.Button flashCardOrig;
+    private FontAwesome.Sharp.IconPictureBox rightArrow;
   }
 }

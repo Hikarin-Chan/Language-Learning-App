@@ -28,144 +28,225 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.Check = new System.Windows.Forms.Button();
-      this.EWord = new System.Windows.Forms.Label();
-      this.AnswerLine = new System.Windows.Forms.TextBox();
-      this.Next = new System.Windows.Forms.Button();
-      this.TOfWord = new System.Windows.Forms.Label();
-      this.EnglishWord = new System.Windows.Forms.Label();
-      this.Transcription = new System.Windows.Forms.Label();
-      this.Tip = new System.Windows.Forms.Label();
-      this.Flashcards = new System.Windows.Forms.Button();
+      this.LeftMenu = new System.Windows.Forms.Panel();
+      this.HomePage = new FontAwesome.Sharp.IconButton();
+      this.SentanceMode = new FontAwesome.Sharp.IconButton();
+      this.WordMode = new FontAwesome.Sharp.IconButton();
+      this.Flashcards = new FontAwesome.Sharp.IconButton();
+      this.HideMenu = new System.Windows.Forms.Panel();
+      this.Menu = new FontAwesome.Sharp.IconButton();
       this.Exit = new System.Windows.Forms.Button();
+      this.TopScreenPanel = new System.Windows.Forms.Panel();
+      this.mainDesktopPanel = new System.Windows.Forms.Panel();
+      this.LeftMenu.SuspendLayout();
+      this.HideMenu.SuspendLayout();
       this.SuspendLayout();
       // 
-      // Check
+      // LeftMenu
       // 
-      this.Check.Location = new System.Drawing.Point(492, 399);
-      this.Check.Name = "Check";
-      this.Check.Size = new System.Drawing.Size(75, 23);
-      this.Check.TabIndex = 0;
-      this.Check.Text = "Check";
-      this.Check.UseVisualStyleBackColor = true;
-      this.Check.Click += new System.EventHandler(this.Check_Click);
+      this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
+      this.LeftMenu.Controls.Add(this.HomePage);
+      this.LeftMenu.Controls.Add(this.SentanceMode);
+      this.LeftMenu.Controls.Add(this.WordMode);
+      this.LeftMenu.Controls.Add(this.Flashcards);
+      this.LeftMenu.Controls.Add(this.HideMenu);
+      this.LeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
+      this.LeftMenu.Location = new System.Drawing.Point(0, 0);
+      this.LeftMenu.Name = "LeftMenu";
+      this.LeftMenu.Size = new System.Drawing.Size(200, 700);
+      this.LeftMenu.TabIndex = 10;
       // 
-      // EWord
+      // HomePage
       // 
-      this.EWord.AutoSize = true;
-      this.EWord.Location = new System.Drawing.Point(509, 338);
-      this.EWord.Name = "EWord";
-      this.EWord.Size = new System.Drawing.Size(0, 13);
-      this.EWord.TabIndex = 1;
+      this.HomePage.Dock = System.Windows.Forms.DockStyle.Top;
+      this.HomePage.FlatAppearance.BorderSize = 0;
+      this.HomePage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.HomePage.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.HomePage.ForeColor = System.Drawing.SystemColors.Control;
+      this.HomePage.IconChar = FontAwesome.Sharp.IconChar.House;
+      this.HomePage.IconColor = System.Drawing.SystemColors.Control;
+      this.HomePage.IconFont = FontAwesome.Sharp.IconFont.Auto;
+      this.HomePage.IconSize = 40;
+      this.HomePage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.HomePage.Location = new System.Drawing.Point(0, 203);
+      this.HomePage.Name = "HomePage";
+      this.HomePage.Padding = new System.Windows.Forms.Padding(10, 2, 3, 3);
+      this.HomePage.Size = new System.Drawing.Size(200, 50);
+      this.HomePage.TabIndex = 15;
+      this.HomePage.Text = "Home";
+      this.HomePage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.HomePage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+      this.HomePage.UseVisualStyleBackColor = true;
+      this.HomePage.Click += new System.EventHandler(this.HomePage_Click);
       // 
-      // AnswerLine
+      // SentanceMode
       // 
-      this.AnswerLine.Location = new System.Drawing.Point(644, 331);
-      this.AnswerLine.Name = "AnswerLine";
-      this.AnswerLine.Size = new System.Drawing.Size(100, 20);
-      this.AnswerLine.TabIndex = 2;
+      this.SentanceMode.AutoSize = true;
+      this.SentanceMode.Dock = System.Windows.Forms.DockStyle.Top;
+      this.SentanceMode.FlatAppearance.BorderSize = 0;
+      this.SentanceMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.SentanceMode.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.SentanceMode.ForeColor = System.Drawing.SystemColors.Control;
+      this.SentanceMode.IconChar = FontAwesome.Sharp.IconChar.AlignLeft;
+      this.SentanceMode.IconColor = System.Drawing.SystemColors.Control;
+      this.SentanceMode.IconFont = FontAwesome.Sharp.IconFont.Auto;
+      this.SentanceMode.IconSize = 40;
+      this.SentanceMode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.SentanceMode.Location = new System.Drawing.Point(0, 152);
+      this.SentanceMode.Name = "SentanceMode";
+      this.SentanceMode.Padding = new System.Windows.Forms.Padding(10, 2, 3, 3);
+      this.SentanceMode.Size = new System.Drawing.Size(200, 51);
+      this.SentanceMode.TabIndex = 14;
+      this.SentanceMode.Text = "Sentance Mode";
+      this.SentanceMode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.SentanceMode.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+      this.SentanceMode.UseVisualStyleBackColor = true;
+      this.SentanceMode.Click += new System.EventHandler(this.SentanceMode_Click);
       // 
-      // Next
+      // WordMode
       // 
-      this.Next.Location = new System.Drawing.Point(658, 399);
-      this.Next.Name = "Next";
-      this.Next.Size = new System.Drawing.Size(75, 23);
-      this.Next.TabIndex = 3;
-      this.Next.Text = "Next";
-      this.Next.UseVisualStyleBackColor = true;
-      this.Next.Click += new System.EventHandler(this.Next_Click);
-      // 
-      // TOfWord
-      // 
-      this.TOfWord.AutoSize = true;
-      this.TOfWord.Location = new System.Drawing.Point(509, 365);
-      this.TOfWord.Name = "TOfWord";
-      this.TOfWord.Size = new System.Drawing.Size(0, 13);
-      this.TOfWord.TabIndex = 4;
-      // 
-      // EnglishWord
-      // 
-      this.EnglishWord.AutoSize = true;
-      this.EnglishWord.Location = new System.Drawing.Point(426, 331);
-      this.EnglishWord.Name = "EnglishWord";
-      this.EnglishWord.Size = new System.Drawing.Size(67, 13);
-      this.EnglishWord.TabIndex = 5;
-      this.EnglishWord.Text = "English word";
-      // 
-      // Transcription
-      // 
-      this.Transcription.AutoSize = true;
-      this.Transcription.Location = new System.Drawing.Point(425, 365);
-      this.Transcription.Name = "Transcription";
-      this.Transcription.Size = new System.Drawing.Size(68, 13);
-      this.Transcription.TabIndex = 6;
-      this.Transcription.Text = "Transcription";
-      // 
-      // Tip
-      // 
-      this.Tip.AutoSize = true;
-      this.Tip.Location = new System.Drawing.Point(426, 304);
-      this.Tip.Name = "Tip";
-      this.Tip.Size = new System.Drawing.Size(0, 13);
-      this.Tip.TabIndex = 7;
+      this.WordMode.AutoSize = true;
+      this.WordMode.Dock = System.Windows.Forms.DockStyle.Top;
+      this.WordMode.FlatAppearance.BorderSize = 0;
+      this.WordMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.WordMode.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.WordMode.ForeColor = System.Drawing.SystemColors.Control;
+      this.WordMode.IconChar = FontAwesome.Sharp.IconChar.VoteYea;
+      this.WordMode.IconColor = System.Drawing.SystemColors.Control;
+      this.WordMode.IconFont = FontAwesome.Sharp.IconFont.Auto;
+      this.WordMode.IconSize = 40;
+      this.WordMode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.WordMode.Location = new System.Drawing.Point(0, 101);
+      this.WordMode.Name = "WordMode";
+      this.WordMode.Padding = new System.Windows.Forms.Padding(10, 2, 3, 3);
+      this.WordMode.Size = new System.Drawing.Size(200, 51);
+      this.WordMode.TabIndex = 13;
+      this.WordMode.Text = "Words Mode";
+      this.WordMode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.WordMode.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+      this.WordMode.UseVisualStyleBackColor = true;
+      this.WordMode.Click += new System.EventHandler(this.WordMode_Click);
       // 
       // Flashcards
       // 
-      this.Flashcards.Location = new System.Drawing.Point(12, 12);
+      this.Flashcards.AutoSize = true;
+      this.Flashcards.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+      this.Flashcards.Dock = System.Windows.Forms.DockStyle.Top;
+      this.Flashcards.FlatAppearance.BorderSize = 0;
+      this.Flashcards.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.Flashcards.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.Flashcards.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+      this.Flashcards.IconChar = FontAwesome.Sharp.IconChar.Language;
+      this.Flashcards.IconColor = System.Drawing.SystemColors.Control;
+      this.Flashcards.IconFont = FontAwesome.Sharp.IconFont.Auto;
+      this.Flashcards.IconSize = 40;
+      this.Flashcards.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.Flashcards.Location = new System.Drawing.Point(0, 50);
       this.Flashcards.Name = "Flashcards";
-      this.Flashcards.Size = new System.Drawing.Size(75, 23);
-      this.Flashcards.TabIndex = 8;
+      this.Flashcards.Padding = new System.Windows.Forms.Padding(10, 2, 3, 3);
+      this.Flashcards.Size = new System.Drawing.Size(200, 51);
+      this.Flashcards.TabIndex = 12;
       this.Flashcards.Text = "Flashcards";
+      this.Flashcards.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.Flashcards.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
       this.Flashcards.UseVisualStyleBackColor = true;
       this.Flashcards.Click += new System.EventHandler(this.Flashcards_Click);
       // 
+      // HideMenu
+      // 
+      this.HideMenu.Controls.Add(this.Menu);
+      this.HideMenu.Dock = System.Windows.Forms.DockStyle.Top;
+      this.HideMenu.Location = new System.Drawing.Point(0, 0);
+      this.HideMenu.Name = "HideMenu";
+      this.HideMenu.Size = new System.Drawing.Size(200, 50);
+      this.HideMenu.TabIndex = 11;
+      // 
+      // Menu
+      // 
+      this.Menu.Anchor = System.Windows.Forms.AnchorStyles.None;
+      this.Menu.BackgroundImage = global::test_01_WF_cour_work_.Properties.Resources._8665130_bars_data_icon;
+      this.Menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.Menu.Cursor = System.Windows.Forms.Cursors.Arrow;
+      this.Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.Menu.IconChar = FontAwesome.Sharp.IconChar.None;
+      this.Menu.IconColor = System.Drawing.Color.Black;
+      this.Menu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+      this.Menu.Location = new System.Drawing.Point(13, 13);
+      this.Menu.Name = "Menu";
+      this.Menu.Size = new System.Drawing.Size(25, 25);
+      this.Menu.TabIndex = 0;
+      this.Menu.UseVisualStyleBackColor = true;
+      // 
       // Exit
       // 
+      this.Exit.Anchor = System.Windows.Forms.AnchorStyles.Right;
       this.Exit.AutoSize = true;
-      this.Exit.Location = new System.Drawing.Point(575, 399);
+      this.Exit.BackColor = System.Drawing.Color.Transparent;
+      this.Exit.BackgroundImage = global::test_01_WF_cour_work_.Properties.Resources._4781838_cancel_close_delete_exit_logout_icon;
+      this.Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.Exit.Location = new System.Drawing.Point(1275, 5);
       this.Exit.Name = "Exit";
-      this.Exit.Size = new System.Drawing.Size(75, 23);
+      this.Exit.Size = new System.Drawing.Size(20, 20);
       this.Exit.TabIndex = 9;
-      this.Exit.Text = "Exit";
-      this.Exit.UseVisualStyleBackColor = true;
+      this.Exit.UseVisualStyleBackColor = false;
       this.Exit.Click += new System.EventHandler(this.Exit_Click);
+      this.Exit.MouseLeave += new System.EventHandler(this.Exit_MouseLeave);
+      this.Exit.MouseHover += new System.EventHandler(this.Exit_MouseHover);
+      // 
+      // TopScreenPanel
+      // 
+      this.TopScreenPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
+      this.TopScreenPanel.Dock = System.Windows.Forms.DockStyle.Top;
+      this.TopScreenPanel.Location = new System.Drawing.Point(200, 0);
+      this.TopScreenPanel.Name = "TopScreenPanel";
+      this.TopScreenPanel.Size = new System.Drawing.Size(1100, 50);
+      this.TopScreenPanel.TabIndex = 11;
+      // 
+      // mainDesktopPanel
+      // 
+      this.mainDesktopPanel.AutoSize = true;
+      this.mainDesktopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+      this.mainDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.mainDesktopPanel.Location = new System.Drawing.Point(200, 50);
+      this.mainDesktopPanel.Name = "mainDesktopPanel";
+      this.mainDesktopPanel.Size = new System.Drawing.Size(1100, 650);
+      this.mainDesktopPanel.TabIndex = 12;
       // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.AutoSize = true;
-      this.ClientSize = new System.Drawing.Size(1269, 681);
+      this.ClientSize = new System.Drawing.Size(1300, 700);
+      this.Controls.Add(this.mainDesktopPanel);
       this.Controls.Add(this.Exit);
-      this.Controls.Add(this.Flashcards);
-      this.Controls.Add(this.Tip);
-      this.Controls.Add(this.Transcription);
-      this.Controls.Add(this.EnglishWord);
-      this.Controls.Add(this.TOfWord);
-      this.Controls.Add(this.Next);
-      this.Controls.Add(this.AnswerLine);
-      this.Controls.Add(this.EWord);
-      this.Controls.Add(this.Check);
-      this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+      this.Controls.Add(this.TopScreenPanel);
+      this.Controls.Add(this.LeftMenu);
+      this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+      this.MinimumSize = new System.Drawing.Size(900, 500);
       this.Name = "Form1";
+      this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "Form1";
+      this.LeftMenu.ResumeLayout(false);
+      this.LeftMenu.PerformLayout();
+      this.HideMenu.ResumeLayout(false);
       this.ResumeLayout(false);
       this.PerformLayout();
 
     }
 
     #endregion
-
-    private System.Windows.Forms.Button Check;
-    private System.Windows.Forms.Label EWord;
-    private System.Windows.Forms.TextBox AnswerLine;
-    private System.Windows.Forms.Button Next;
-    private System.Windows.Forms.Label TOfWord;
-    private System.Windows.Forms.Label EnglishWord;
-    private System.Windows.Forms.Label Transcription;
-    private System.Windows.Forms.Label Tip;
-    private System.Windows.Forms.Button Flashcards;
     private System.Windows.Forms.Button Exit;
+    private System.Windows.Forms.Panel LeftMenu;
+    private System.Windows.Forms.Panel HideMenu;
+    private FontAwesome.Sharp.IconButton Flashcards;
+    private FontAwesome.Sharp.IconButton SentanceMode;
+    private FontAwesome.Sharp.IconButton WordMode;
+    private FontAwesome.Sharp.IconButton Menu;
+    private FontAwesome.Sharp.IconButton HomePage;
+    private System.Windows.Forms.Panel TopScreenPanel;
+    private System.Windows.Forms.Panel mainDesktopPanel;
   }
 }
 
