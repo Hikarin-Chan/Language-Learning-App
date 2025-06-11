@@ -7,9 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using System.IO;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
+using System.CodeDom;
 
 namespace test_01_WF_cour_work_
 {
@@ -18,25 +19,14 @@ namespace test_01_WF_cour_work_
     private int currentWordIndex = 0;
     private List<Word> words;
 
-    public WordModeForm()
-    {
-      InitializeComponent();
-      LoadData();
-      ShowNextWord();
-    }
+    public event Form1.IndexChangedEventHandler IndexCganged;
 
-    private void LoadData()
+    internal WordModeForm(List<Word> words, int currentWordIndex)
     {
-      string jsonFilePath = "Words.json";
-      if (File.Exists(jsonFilePath))
-      {
-        string jsonData = File.ReadAllText(jsonFilePath);
-        words = JsonSerializer.Deserialize<List<Word>>(jsonData);
-      }
-      else
-      {
-        MessageBox.Show("Data file not found.");
-      }
+      this.words = words;
+      this.currentWordIndex = currentWordIndex;
+      InitializeComponent();
+      ShowNextWord();
     }
 
     public void ShowNextWord()
@@ -44,6 +34,8 @@ namespace test_01_WF_cour_work_
       wordToTranslate.Text = words[currentWordIndex].english;
       TOfWord.Text = words[currentWordIndex].transcription;
       answerLine.Clear();
+
+      IndexCganged?.Invoke(currentWordIndex);
     }
 
     private void Check_Click(object sender, EventArgs e)
@@ -83,11 +75,6 @@ namespace test_01_WF_cour_work_
         MessageBox.Show("Вы завершили все тесты!!!");
         currentWordIndex = 0;
       }
-    }
-
-    private void WordModeForm_FormClosing(object sender, EventArgs e)
-    {
-      new flashCardsForm(words, currentWordIndex);
     }
   }
 }

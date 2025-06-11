@@ -141,7 +141,6 @@
       this.Margin = new System.Windows.Forms.Padding(4);
       this.Name = "WordModeForm";
       this.Text = "WordMode";
-      this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.WordModeForm_FormClosing);
       this.wordModePanel.ResumeLayout(false);
       this.wordModePanel.PerformLayout();
       this.ResumeLayout(false);

@@ -12,41 +12,22 @@ using System.Windows.Forms;
 namespace test_01_WF_cour_work_
 {
   public partial class flashCardsForm : Form
-  {
-    
+  {    
     private int currentWordIndex;
-    List<Word> words;
+    private List<Word> words;
+
+    public event Form1.IndexChangedEventHandler IndexChanged;
 
     internal flashCardsForm(List<Word> words, int currentWordIndex)
     {
       InitializeComponent();
       this.words = words;
       this.currentWordIndex = currentWordIndex;
+
+      flashCardOrig.Text = words[currentWordIndex].english;
     }
 
-    public flashCardsForm()
-    {
-      InitializeComponent();
-    }
-
-
-    private void FlashCardsForm_Load(object sender, EventArgs e)
-    {
-      string jsonFilePath = "Words.json";
-      if (System.IO.File.Exists(jsonFilePath))
-      {
-        string jsonData = System.IO.File.ReadAllText(jsonFilePath);
-        words = System.Text.Json.JsonSerializer.Deserialize<List<Word>>(jsonData);
-      }
-      else
-      {
-        MessageBox.Show("Data file not found.");
-        words = new List<Word>();
-      }
-    }
-
-
-    private void button1_Click(object sender, EventArgs e)
+    private void flashTranslate_Click(object sender, EventArgs e)
     {
       int width = flashTranslate.Size.Width;
       for (int i = 0; i < width; i++)
@@ -58,7 +39,7 @@ namespace test_01_WF_cour_work_
         }
       }
 
-      flashTranslate.Text = words[currentWordIndex].english;
+      flashTranslate.Text = words[currentWordIndex].russian;
 
       for (int i = 0; i < width; i++)
       {

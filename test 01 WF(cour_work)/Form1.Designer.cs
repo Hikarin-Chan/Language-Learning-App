@@ -233,6 +233,7 @@
       this.HideMenu.ResumeLayout(false);
       this.ResumeLayout(false);
       this.PerformLayout();
+      this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
 
     }
 
