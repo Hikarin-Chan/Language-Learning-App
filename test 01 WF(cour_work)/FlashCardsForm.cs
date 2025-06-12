@@ -16,7 +16,7 @@ namespace test_01_WF_cour_work_
     private int currentWordIndex;
     private List<Word> words;
 
-    public event Form1.IndexChangedEventHandler IndexChanged;
+    public event MainForm.IndexChangedEventHandler IndexChanged;
 
     internal flashCardsForm(List<Word> words, int currentWordIndex)
     {
@@ -39,7 +39,7 @@ namespace test_01_WF_cour_work_
         }
       }
 
-      flashTranslate.Text = words[currentWordIndex].russian;
+      flashTranslate.Text = words[currentWordIndex].ukrainian;
 
       for (int i = 0; i < width; i++)
       {

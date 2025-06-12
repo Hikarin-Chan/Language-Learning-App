@@ -1,6 +1,6 @@
 ﻿namespace test_01_WF_cour_work_
 {
-  partial class Form1
+  partial class MainForm
   {
     /// <summary>
     /// Обязательная переменная конструктора.
@@ -28,6 +28,7 @@
     /// </summary>
     private void InitializeComponent()
     {
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
       this.LeftMenu = new System.Windows.Forms.Panel();
       this.HomePage = new FontAwesome.Sharp.IconButton();
       this.SentanceMode = new FontAwesome.Sharp.IconButton();
@@ -35,11 +36,14 @@
       this.Flashcards = new FontAwesome.Sharp.IconButton();
       this.HideMenu = new System.Windows.Forms.Panel();
       this.Menu = new FontAwesome.Sharp.IconButton();
-      this.Exit = new System.Windows.Forms.Button();
       this.TopScreenPanel = new System.Windows.Forms.Panel();
+      this.Exit = new FontAwesome.Sharp.IconButton();
+      this.ScreenMinimize = new FontAwesome.Sharp.IconButton();
+      this.ScreenMaximize = new FontAwesome.Sharp.IconButton();
       this.mainDesktopPanel = new System.Windows.Forms.Panel();
       this.LeftMenu.SuspendLayout();
       this.HideMenu.SuspendLayout();
+      this.TopScreenPanel.SuspendLayout();
       this.SuspendLayout();
       // 
       // LeftMenu
@@ -51,9 +55,9 @@
       this.LeftMenu.Controls.Add(this.Flashcards);
       this.LeftMenu.Controls.Add(this.HideMenu);
       this.LeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
-      this.LeftMenu.Location = new System.Drawing.Point(0, 0);
+      this.LeftMenu.Location = new System.Drawing.Point(2, 2);
       this.LeftMenu.Name = "LeftMenu";
-      this.LeftMenu.Size = new System.Drawing.Size(200, 700);
+      this.LeftMenu.Size = new System.Drawing.Size(200, 696);
       this.LeftMenu.TabIndex = 10;
       // 
       // HomePage
@@ -177,68 +181,113 @@
       this.Menu.TabIndex = 0;
       this.Menu.UseVisualStyleBackColor = true;
       // 
+      // TopScreenPanel
+      // 
+      this.TopScreenPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
+      this.TopScreenPanel.Controls.Add(this.Exit);
+      this.TopScreenPanel.Controls.Add(this.ScreenMinimize);
+      this.TopScreenPanel.Controls.Add(this.ScreenMaximize);
+      this.TopScreenPanel.Dock = System.Windows.Forms.DockStyle.Top;
+      this.TopScreenPanel.Location = new System.Drawing.Point(202, 2);
+      this.TopScreenPanel.Name = "TopScreenPanel";
+      this.TopScreenPanel.Size = new System.Drawing.Size(1096, 50);
+      this.TopScreenPanel.TabIndex = 11;
+      this.TopScreenPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopScreenPanel_MouseDown);
+      // 
       // Exit
       // 
       this.Exit.Anchor = System.Windows.Forms.AnchorStyles.Right;
-      this.Exit.AutoSize = true;
-      this.Exit.BackColor = System.Drawing.Color.Transparent;
-      this.Exit.BackgroundImage = global::test_01_WF_cour_work_.Properties.Resources._4781838_cancel_close_delete_exit_logout_icon;
+      this.Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Exit.BackgroundImage")));
       this.Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.Exit.FlatAppearance.BorderSize = 0;
       this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.Exit.Location = new System.Drawing.Point(1275, 5);
+      this.Exit.IconChar = FontAwesome.Sharp.IconChar.None;
+      this.Exit.IconColor = System.Drawing.Color.Black;
+      this.Exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+      this.Exit.Location = new System.Drawing.Point(1071, 5);
       this.Exit.Name = "Exit";
+      this.Exit.Padding = new System.Windows.Forms.Padding(2);
       this.Exit.Size = new System.Drawing.Size(20, 20);
-      this.Exit.TabIndex = 9;
-      this.Exit.UseVisualStyleBackColor = false;
+      this.Exit.TabIndex = 2;
+      this.Exit.UseVisualStyleBackColor = true;
       this.Exit.Click += new System.EventHandler(this.Exit_Click);
       this.Exit.MouseLeave += new System.EventHandler(this.Exit_MouseLeave);
       this.Exit.MouseHover += new System.EventHandler(this.Exit_MouseHover);
       // 
-      // TopScreenPanel
+      // ScreenMinimize
       // 
-      this.TopScreenPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
-      this.TopScreenPanel.Dock = System.Windows.Forms.DockStyle.Top;
-      this.TopScreenPanel.Location = new System.Drawing.Point(200, 0);
-      this.TopScreenPanel.Name = "TopScreenPanel";
-      this.TopScreenPanel.Size = new System.Drawing.Size(1100, 50);
-      this.TopScreenPanel.TabIndex = 11;
+      this.ScreenMinimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
+      this.ScreenMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ScreenMinimize.BackgroundImage")));
+      this.ScreenMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.ScreenMinimize.FlatAppearance.BorderSize = 0;
+      this.ScreenMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.ScreenMinimize.IconChar = FontAwesome.Sharp.IconChar.None;
+      this.ScreenMinimize.IconColor = System.Drawing.Color.Black;
+      this.ScreenMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+      this.ScreenMinimize.Location = new System.Drawing.Point(1021, 5);
+      this.ScreenMinimize.Name = "ScreenMinimize";
+      this.ScreenMinimize.Padding = new System.Windows.Forms.Padding(2);
+      this.ScreenMinimize.Size = new System.Drawing.Size(18, 20);
+      this.ScreenMinimize.TabIndex = 1;
+      this.ScreenMinimize.UseVisualStyleBackColor = true;
+      this.ScreenMinimize.Click += new System.EventHandler(this.ScreenMinimize_Click);
+      // 
+      // ScreenMaximize
+      // 
+      this.ScreenMaximize.Anchor = System.Windows.Forms.AnchorStyles.Right;
+      this.ScreenMaximize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ScreenMaximize.BackgroundImage")));
+      this.ScreenMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.ScreenMaximize.FlatAppearance.BorderSize = 0;
+      this.ScreenMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.ScreenMaximize.IconChar = FontAwesome.Sharp.IconChar.None;
+      this.ScreenMaximize.IconColor = System.Drawing.Color.Black;
+      this.ScreenMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+      this.ScreenMaximize.Location = new System.Drawing.Point(1046, 5);
+      this.ScreenMaximize.Name = "ScreenMaximize";
+      this.ScreenMaximize.Padding = new System.Windows.Forms.Padding(2);
+      this.ScreenMaximize.Size = new System.Drawing.Size(20, 20);
+      this.ScreenMaximize.TabIndex = 0;
+      this.ScreenMaximize.UseVisualStyleBackColor = true;
+      this.ScreenMaximize.Click += new System.EventHandler(this.ScreenMaximize_Click);
       // 
       // mainDesktopPanel
       // 
       this.mainDesktopPanel.AutoSize = true;
       this.mainDesktopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
       this.mainDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.mainDesktopPanel.Location = new System.Drawing.Point(200, 50);
+      this.mainDesktopPanel.Location = new System.Drawing.Point(202, 52);
       this.mainDesktopPanel.Name = "mainDesktopPanel";
-      this.mainDesktopPanel.Size = new System.Drawing.Size(1100, 650);
+      this.mainDesktopPanel.Size = new System.Drawing.Size(1096, 646);
       this.mainDesktopPanel.TabIndex = 12;
       // 
-      // Form1
+      // MainForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.AutoSize = true;
+      this.BackColor = System.Drawing.Color.Red;
       this.ClientSize = new System.Drawing.Size(1300, 700);
       this.Controls.Add(this.mainDesktopPanel);
-      this.Controls.Add(this.Exit);
       this.Controls.Add(this.TopScreenPanel);
       this.Controls.Add(this.LeftMenu);
-      this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+      this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
       this.MinimumSize = new System.Drawing.Size(900, 500);
-      this.Name = "Form1";
+      this.Name = "MainForm";
+      this.Padding = new System.Windows.Forms.Padding(2);
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-      this.Text = "Form1";
+      this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
       this.LeftMenu.ResumeLayout(false);
       this.LeftMenu.PerformLayout();
       this.HideMenu.ResumeLayout(false);
+      this.TopScreenPanel.ResumeLayout(false);
       this.ResumeLayout(false);
       this.PerformLayout();
-      this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+      this.Activated += new System.EventHandler(this.MainForm_Activated);
+      this.Deactivate += new System.EventHandler(this.MainForm_Deactivated);
 
     }
 
     #endregion
-    private System.Windows.Forms.Button Exit;
     private System.Windows.Forms.Panel LeftMenu;
     private System.Windows.Forms.Panel HideMenu;
     private FontAwesome.Sharp.IconButton Flashcards;
@@ -248,6 +297,9 @@
     private FontAwesome.Sharp.IconButton HomePage;
     private System.Windows.Forms.Panel TopScreenPanel;
     private System.Windows.Forms.Panel mainDesktopPanel;
+    private FontAwesome.Sharp.IconButton ScreenMaximize;
+    private FontAwesome.Sharp.IconButton Exit;
+    private FontAwesome.Sharp.IconButton ScreenMinimize;
   }
 }
 

@@ -16,9 +16,7 @@ namespace test_01_WF_cour_work_
   {
     private static readonly string jsonFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Save.json");
     private static readonly string wordsJsonFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Words.json");
-    private static int currentWordIndex = 0;
-
-    public static int CurrentWordIndex { get; set; } = 0;
+    
 
     public static void SaveData(int currentIndex)
     {

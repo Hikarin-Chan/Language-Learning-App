@@ -1,34 +1,551 @@
 [
-  { "english": "Dog", "russian": "Собака", "transcription": "[dɒɡ]" },
-  { "english": "Cat", "russian": "Кошка", "transcription": "[kæt]" },
-  { "english": "Bird", "russian": "Птица", "transcription": "[bɜːd]" },
-  { "english": "Fish", "russian": "Рыба", "transcription": "[fɪʃ]" },
-  { "english": "Horse", "russian": "Лошадь", "transcription": "[hɔːs]" },
-  { "english": "Cow", "russian": "Корова", "transcription": "[kaʊ]" },
-  { "english": "Sheep", "russian": "Овца", "transcription": "[ʃiːp]" },
-  { "english": "Pig", "russian": "Свинья", "transcription": "[pɪɡ]" },
-  { "english": "Chicken", "russian": "Курица", "transcription": "[ˈtʃɪkɪn]" },
-  { "english": "Duck", "russian": "Утка", "transcription": "[dʌk]" },
-  { "english": "Goat", "russian": "Коза", "transcription": "[ɡəʊt]" },
-  { "english": "Rabbit", "russian": "Кролик", "transcription": "[ˈræbɪt]" },
-  { "english": "Frog", "russian": "Лягушка", "transcription": "[frɒɡ]" },
-  { "english": "Snake", "russian": "Змея", "transcription": "[sneɪk]" },
-  { "english": "Turtle", "russian": "Черепаха", "transcription": "[ˈtɜːtl]" },
-  { "english": "Bear", "russian": "Медведь", "transcription": "[beə]" },
-  { "english": "Lion", "russian": "Лев", "transcription": "[ˈlaɪən]" },
-  { "english": "Tiger", "russian": "Тигр", "transcription": "[ˈtaɪɡə]" },
-  { "english": "Elephant", "russian": "Слон", "transcription": "[ˈelɪfənt]" },
-  { "english": "Monkey", "russian": "Обезьяна", "transcription": "[ˈmʌŋki]" },
-  { "english": "Giraffe", "russian": "Жираф", "transcription": "[dʒɪˈrɑːf]" },
-  { "english": "Zebra", "russian": "Зебра", "transcription": "[ˈzebrə]" },
   {
-    "english": "Kangaroo",
-    "russian": "Кенгуру",
-    "transcription": "[ˌkæŋɡəˈruː]"
+    "english": "Inside",
+    "ukrainian": "Усередині",
+    "transcription": "[in'said]"
   },
-  { "english": "Panda", "russian": "Панда", "transcription": "[ˈpændə]" },
-  { "english": "Koala", "russian": "Коала", "transcription": "[kəʊˈɑːlə]" },
-  { "english": "Wolf", "russian": "Волк", "transcription": "[wʊlf]" },
-  { "english": "Fox", "russian": "Лиса", "transcription": "[fɒks]" },
-  { "english": "Deer", "russian": "Олень", "transcription": "[dɪə]" }
+  { "english": "Ferry", "ukrainian": "Пором", "transcription": "['feri]" },
+  { "english": "Lorry", "ukrainian": "Вантажівка", "transcription": "[lɔri]" },
+  {
+    "english": "Relative",
+    "ukrainian": "Родич",
+    "transcription": "['relətɪv]"
+  },
+  {
+    "english": "Furniture",
+    "ukrainian": "Меблі",
+    "transcription": "['fɜ:niʧə]"
+  },
+  {
+    "english": "Commute",
+    "ukrainian": "поїздка на роботу й назад",
+    "transcription": "[kə'mju:t]"
+  },
+  {
+    "english": "Compound nouns",
+    "ukrainian": "Складні іменники",
+    "transcription": null
+  },
+  {
+    "english": "Carbon emissions",
+    "ukrainian": "Викиди вуглецю",
+    "transcription": null
+  },
+  {
+    "english": "Container ship",
+    "ukrainian": "Контейнерне судно",
+    "transcription": null
+  },
+  {
+    "english": "Fuel costs",
+    "ukrainian": "Витрати на паливо",
+    "transcription": null
+  },
+  { "english": "Rush hour", "ukrainian": "Години пік", "transcription": null },
+  {
+    "english": "Speed limit",
+    "ukrainian": "Дозволена швидкість",
+    "transcription": "['spiːdˌlɪmɪt]"
+  },
+  { "english": "Traffic jam", "ukrainian": "Затор", "transcription": null },
+  {
+    "english": "Public transport",
+    "ukrainian": "Громадський транспорт",
+    "transcription": null
+  },
+  {
+    "english": "Vehicle",
+    "ukrainian": "Транспортний засіб",
+    "transcription": "['vi:ık(ə)l]"
+  },
+  { "english": "Petrol", "ukrainian": "Бензин", "transcription": "['petrəl]" },
+  { "english": "Etc", "ukrainian": "Тощо", "transcription": "[et'set(ə)rə]" },
+  {
+    "english": "Expensive",
+    "ukrainian": "Дорогий",
+    "transcription": "[ɪk'spen(t)sɪv, ek-]"
+  },
+  { "english": "On time", "ukrainian": "Вчасно", "transcription": null },
+  {
+    "english": "Contribute",
+    "ukrainian": "Робити внесок",
+    "transcription": "[kən'tribju:t]"
+  },
+  { "english": "Goods", "ukrainian": "Товари", "transcription": "[gʊdz]" },
+  {
+    "english": "Solution",
+    "ukrainian": "Рішення проблеми",
+    "transcription": "[sə'lu:ʃ(ə)n]"
+  },
+  {
+    "english": "Currently",
+    "ukrainian": "Зараз",
+    "transcription": "['kerəntli]"
+  },
+  {
+    "english": "Driverless cars",
+    "ukrainian": "Автомобілі без водія",
+    "transcription": null
+  },
+  {
+    "english": "Solar energy",
+    "ukrainian": "Сонячна енергія",
+    "transcription": null
+  },
+  {
+    "english": "Environment",
+    "ukrainian": "Навколишнє середовище",
+    "transcription": "[in'vai(ə)rənmənt]"
+  },
+  {
+    "english": "Monorail",
+    "ukrainian": "Монорейка",
+    "transcription": "['mɔnə(u)reil]"
+  },
+  {
+    "english": "Kite",
+    "ukrainian": "Верхнє летуче вітрило",
+    "transcription": "[kaɪt]"
+  },
+  {
+    "english": "Reduce",
+    "ukrainian": "Зменшувати",
+    "transcription": "[ri'dju:s]"
+  },
+  {
+    "english": "Hyperloop",
+    "ukrainian": "Вакуумний поїзд",
+    "transcription": null
+  },
+  {
+    "english": "Common",
+    "ukrainian": "Загальний",
+    "transcription": "['kɔmən]"
+  },
+  { "english": "Tube", "ukrainian": "Трубка", "transcription": "[tju:b]" },
+  { "english": "Pods", "ukrainian": "Капсули", "transcription": "[pɔd]" },
+  {
+    "english": "Advantage",
+    "ukrainian": "Перевага",
+    "transcription": "[əd'vɔ:ntɪdʒ]"
+  },
+  {
+    "english": "Disadvantage",
+    "ukrainian": "Недолік",
+    "transcription": "[dɪsəd'vɔ:ntɪdʒ]"
+  },
+  {
+    "english": "Comparative",
+    "ukrainian": "Порівняльний ступінь",
+    "transcription": "[kəm'pærətiv]"
+  },
+  {
+    "english": "Superlative",
+    "ukrainian": "Найвищий ступінь",
+    "transcription": "[s(j)u:'pɜ:lətiv]"
+  },
+  {
+    "english": "Irregular",
+    "ukrainian": "Неправильний",
+    "transcription": "[i'regjulə]"
+  },
+  {
+    "english": "Survey",
+    "ukrainian": "Опитування",
+    "transcription": "['sɜ:vei]"
+  },
+  { "english": "However", "ukrainian": "Однак", "transcription": "[hau'evə]" },
+  {
+    "english": "Journey",
+    "ukrainian": "Подорож",
+    "transcription": "['dʒɜ:nɪ]"
+  },
+  {
+    "english": "Exhibition",
+    "ukrainian": "Виставка",
+    "transcription": "[eksi'biʃ(ə)n]"
+  },
+  {
+    "english": "Probably",
+    "ukrainian": "Імовірно",
+    "transcription": "['prɔbəbli]"
+  },
+  {
+    "english": "Rewarding",
+    "ukrainian": "Який винагороджує",
+    "transcription": "[ri'wɔ:diŋ]"
+  },
+  { "english": "Pack", "ukrainian": "Упаковувати", "transcription": "[pæk]" },
+  {
+    "english": "Provide (with)",
+    "ukrainian": "Забезпечувати",
+    "transcription": "[prə'vaid]"
+  },
+  {
+    "english": "Return",
+    "ukrainian": "Повертати",
+    "transcription": "[ri'tɜ:n]"
+  },
+  { "english": "Cost", "ukrainian": "Ціна", "transcription": "[kɔst]" },
+  {
+    "english": "Whenever",
+    "ukrainian": "Кожний раз, коли",
+    "transcription": "[we nevə]"
+  },
+  {
+    "english": "Destination",
+    "ukrainian": "Місце призначення",
+    "transcription": "[destɪ'neɪʃ(ə)n]"
+  },
+  {
+    "english": "Facility",
+    "ukrainian": "Зручності",
+    "transcription": "[fə'siliti]"
+  },
+  { "english": "Huge", "ukrainian": "Величезний", "transcription": "[hju:dʒ]" },
+  {
+    "english": "Rideable",
+    "ukrainian": "Придатний для їзди",
+    "transcription": "['raidəb(ə)l]"
+  },
+  {
+    "english": "Blindfold",
+    "ukrainian": "Пов'язка на очах",
+    "transcription": "['blaɪndfəʊld]"
+  },
+  {
+    "english": "Presenter",
+    "ukrainian": "Ведучий програми",
+    "transcription": "[pri'zentə]"
+  },
+  {
+    "english": "Top speed",
+    "ukrainian": "Найбільша швидкість",
+    "transcription": null
+  },
+  {
+    "english": "Motorbike",
+    "ukrainian": "Мопед",
+    "transcription": "['məʊtəbaik]"
+  },
+  {
+    "english": "Accident",
+    "ukrainian": "Нещасний випадок",
+    "transcription": "['æksɪd(ə)nt]"
+  },
+  {
+    "english": "Convenient",
+    "ukrainian": "Зручний",
+    "transcription": "[kən'vi:niənt]"
+  },
+  {
+    "english": "Amount",
+    "ukrainian": "Кількість",
+    "transcription": "[ə'maunt]"
+  },
+  {
+    "english": "Compare",
+    "ukrainian": "Порівнювати",
+    "transcription": "[kəm'peə]"
+  },
+  {
+    "english": "Frequent",
+    "ukrainian": "Частий",
+    "transcription": "['fri:kwənt]"
+  },
+  { "english": "Hire", "ukrainian": "Напрокат", "transcription": "['haiə]" },
+  { "english": "Book", "ukrainian": "Бронювати", "transcription": "[buk]" },
+  {
+    "english": "Certain",
+    "ukrainian": "Упевнений",
+    "transcription": "['sɜ:tn]"
+  },
+  {
+    "english": "Satnav",
+    "ukrainian": "Супутникова навігація",
+    "transcription": "[ˈsatnav]"
+  },
+  { "english": "Route", "ukrainian": "Маршрут", "transcription": "[ru:t]" },
+  {
+    "english": "Reliable",
+    "ukrainian": "Надійний",
+    "transcription": "[rɪ'laɪəb(ə)l]"
+  },
+  {
+    "english": "Comfortable",
+    "ukrainian": "Зручний",
+    "transcription": "['kemf(ə)təb(ə)l]"
+  },
+  {
+    "english": "In advance",
+    "ukrainian": "Заздалегідь",
+    "transcription": null
+  },
+  {
+    "english": "Generally",
+    "ukrainian": "У загальному значенні",
+    "transcription": "[dʒen(ə)rəli]"
+  },
+  {
+    "english": "Direct",
+    "ukrainian": "Прямий",
+    "transcription": "[d(a)ɪ'rekt]"
+  },
+  { "english": "Price", "ukrainian": "Ціна", "transcription": "[prais]" },
+  {
+    "english": "Definitely",
+    "ukrainian": "Точно",
+    "transcription": "['defɪnɪtlɪ]"
+  },
+  { "english": "Worth", "ukrainian": "Вартий", "transcription": "[wɜ:a]" },
+  {
+    "english": "Anywhere",
+    "ukrainian": "Куди-небудь",
+    "transcription": "['enɪweə]"
+  },
+  {
+    "english": "Frequency",
+    "ukrainian": "Частота",
+    "transcription": "['fri:kwənsi]"
+  },
+  { "english": "Luggage", "ukrainian": "Багаж", "transcription": "['legidʒ]" },
+  {
+    "english": "Population",
+    "ukrainian": "Населення",
+    "transcription": "[pɔpju'leiʃ(ə)n]"
+  },
+  {
+    "english": "Pedestrian",
+    "ukrainian": "Пішохід",
+    "transcription": "[pi'destriən]"
+  },
+  {
+    "english": "Commuter",
+    "ukrainian": "Житель передмістя, що працює в місті",
+    "transcription": "[kə'mju:tə]"
+  },
+  {
+    "english": "Housewife",
+    "ukrainian": "Домогосподарка",
+    "transcription": "['hauswaif]"
+  },
+  {
+    "english": "Pedicab",
+    "ukrainian": "Велорикша",
+    "transcription": "['pedikæb]"
+  },
+  { "english": "Honk", "ukrainian": "Сигналити", "transcription": "[hɔŋk]" },
+  { "english": "Horn", "ukrainian": "Клаксон", "transcription": "[hɔ:n]" },
+  {
+    "english": "Underground",
+    "ukrainian": "Підземний",
+    "transcription": "[,endə'graʊnd]"
+  },
+  {
+    "english": "Fortunately",
+    "ukrainian": "На щастя",
+    "transcription": "['fɔ:ʧ(ə)nətli]"
+  },
+  { "english": "Pick up", "ukrainian": "Підбирати", "transcription": null },
+  { "english": "Market", "ukrainian": "Ринок", "transcription": "['mɔ:kit]" },
+  {
+    "english": "Instead",
+    "ukrainian": "Замість",
+    "transcription": "[in'sted]"
+  },
+  {
+    "english": "Politician",
+    "ukrainian": "Політик",
+    "transcription": "[pɔli'tiʃ(ə)n]"
+  },
+  {
+    "english": "Reason",
+    "ukrainian": "Причина",
+    "transcription": "['ri:z(ə)n]"
+  },
+  { "english": "Opinion", "ukrainian": "Думка", "transcription": "[ə'pinjən]" },
+  {
+    "english": "Sightseeing",
+    "ukrainian": "Огляд визначних пам'яток",
+    "transcription": "['sait,si:iŋ]"
+  },
+  { "english": "Through", "ukrainian": "Через", "transcription": "[θru:]" },
+  { "english": "Desert", "ukrainian": "Пустеля", "transcription": "['dezət]" },
+  {
+    "english": "Heavy loads",
+    "ukrainian": "Важка ноша",
+    "transcription": null
+  },
+  { "english": "Hump", "ukrainian": "Горб", "transcription": "[hemp]" },
+  { "english": "Knee", "ukrainian": "Коліно", "transcription": "[ni:]" },
+  { "english": "Skinny", "ukrainian": "Худий", "transcription": "['skini]" },
+  { "english": "Ugly", "ukrainian": "Потворний", "transcription": "['egli]" },
+  { "english": "Honour", "ukrainian": "Честь", "transcription": "['ɔnə]" },
+  {
+    "english": "Respect",
+    "ukrainian": "Повага",
+    "transcription": "[ri'spekt]"
+  },
+  {
+    "english": "Immediately",
+    "ukrainian": "Негайно",
+    "transcription": "[i'mi:diətli]"
+  },
+  { "english": "Tent", "ukrainian": "Намет", "transcription": "[tent]" },
+  { "english": "Plate", "ukrainian": "Тарілка", "transcription": "[pleit]" },
+  {
+    "english": "Motorway",
+    "ukrainian": "Автострада",
+    "transcription": "['məʊtəwei]"
+  },
+  {
+    "english": "Rank",
+    "ukrainian": "Стоянка таксі",
+    "transcription": "[ræŋk]"
+  },
+  {
+    "english": "Fare",
+    "ukrainian": "Плата за проїзд",
+    "transcription": "[feə]"
+  },
+  { "english": "Change", "ukrainian": "Здача", "transcription": "[ʧeindʒ]" },
+  {
+    "english": "Receipt",
+    "ukrainian": "Квитанція",
+    "transcription": "[ri'si:t]"
+  },
+  {
+    "english": "Platform",
+    "ukrainian": "Платформа",
+    "transcription": "['plætfɔ:m]"
+  },
+  {
+    "english": "Gate",
+    "ukrainian": "Вихід на посадку",
+    "transcription": "[geɪt]"
+  },
+  {
+    "english": "Check in",
+    "ukrainian": "Реєструватися",
+    "transcription": null
+  },
+  {
+    "english": "Single ticket",
+    "ukrainian": "Квиток в один кінець",
+    "transcription": null
+  },
+  {
+    "english": "Return ticket",
+    "ukrainian": "Квиток в обидва кінці",
+    "transcription": null
+  },
+  {
+    "english": "Include",
+    "ukrainian": "Містити, включати",
+    "transcription": "[in'klu:d]"
+  },
+  { "english": "Drop off", "ukrainian": "Висаджувати", "transcription": null },
+  {
+    "english": "Apologize",
+    "ukrainian": "Вибачатися",
+    "transcription": "[ə'pɔlədʒaɪz]"
+  },
+  {
+    "english": "Suggest",
+    "ukrainian": "Пропонувати",
+    "transcription": "[sə'dʒest]"
+  },
+  {
+    "english": "Pronoun",
+    "ukrainian": "Займенник",
+    "transcription": "['prəʊnaun]"
+  },
+  {
+    "english": "Auxiliary verb",
+    "ukrainian": "Допоміжне дієслово",
+    "transcription": "[ɔ:g'zɪljərɪ]"
+  },
+  {
+    "english": "Polite forms",
+    "ukrainian": "Ввічливі форми",
+    "transcription": null
+  },
+  {
+    "english": "Opposite",
+    "ukrainian": "Навпроти",
+    "transcription": "['ɔpəzit]"
+  },
+  {
+    "english": "Arrivals area",
+    "ukrainian": "Зона прибуття",
+    "transcription": null
+  },
+  {
+    "english": "Caption",
+    "ukrainian": "Заголовок",
+    "transcription": "['kæpʃ(ə)n]"
+  },
+  {
+    "english": "Railway track",
+    "ukrainian": "Залізнична колія",
+    "transcription": null
+  },
+  {
+    "english": "Impressive",
+    "ukrainian": "Який вражає",
+    "transcription": "[im'presiv]"
+  },
+  {
+    "english": "Rural",
+    "ukrainian": "Сільський",
+    "transcription": "['ru(ə)rəl]"
+  },
+  {
+    "english": "Miniature",
+    "ukrainian": "Мініатюра",
+    "transcription": "['mɪnj(ə)ʧə]"
+  },
+  { "english": "Workforce", "ukrainian": "Робоча сила", "transcription": null },
+  {
+    "english": "Countryside",
+    "ukrainian": "Сільська місцевість",
+    "transcription": "['kentrisaid]"
+  },
+  {
+    "english": "Current",
+    "ukrainian": "Поточний",
+    "transcription": "['kerənt]"
+  },
+  {
+    "english": "Approximately",
+    "ukrainian": "Приблизно",
+    "transcription": "[ə'prɔksɪmɪtlɪ]"
+  },
+  {
+    "english": "Steam train",
+    "ukrainian": "Паровий поїзд",
+    "transcription": null
+  },
+  { "english": "Staff", "ukrainian": "Персонал", "transcription": "[stɔ:f]" },
+  {
+    "english": "Enormous",
+    "ukrainian": "Величезний",
+    "transcription": "[i'nɔ:məs]"
+  },
+  {
+    "english": "Narration",
+    "ukrainian": "Авторський коментар",
+    "transcription": "[nə'reiʃ(ə)n]"
+  },
+  {
+    "english": "Furthest",
+    "ukrainian": "Найвіддаленіший",
+    "transcription": "['fɜ:pist]"
+  },
+  { "english": "Land", "ukrainian": "Приземлятися", "transcription": "[lænd]" },
+  {
+    "english": "Aisle",
+    "ukrainian": "Прохід між рядами",
+    "transcription": "[aɪl]"
+  }
 ]

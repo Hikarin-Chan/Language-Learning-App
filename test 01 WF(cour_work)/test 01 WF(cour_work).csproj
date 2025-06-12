@@ -144,13 +144,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\11151209_dictionary_letters_translation_translate_words_icon %281%29.png" />
     <Content Include="Images\11151209_dictionary_letters_translation_translate_words_icon.png" />
     <Content Include="Images\4781838_cancel_close_delete_exit_logout_icon.png" />
+    <Content Include="Images\8664917_window_minimize_icon.png" />
     <Content Include="Images\8665130_bars_data_icon.png" />
-    <Content Include="Images\8674848_ic_fluent_full_screen_maximize_icon.png" />
-    <Content Include="Images\8674976_ic_fluent_full_screen_minimize_icon.png" />
-    <Content Include="Images\modern-background-with-geometric-shapes_336924-4317.png" />
+    <Content Include="Images\8673614_ic_fluent_maximize_filled_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

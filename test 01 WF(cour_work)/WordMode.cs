@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.CodeDom;
+using System.Diagnostics.Tracing;
 
 namespace test_01_WF_cour_work_
 {
@@ -18,8 +19,11 @@ namespace test_01_WF_cour_work_
   {
     private int currentWordIndex = 0;
     private List<Word> words;
+    public int a;
+    Random rnd = new Random();
 
-    public event Form1.IndexChangedEventHandler IndexCganged;
+
+    public event MainForm.IndexChangedEventHandler IndexCganged;
 
     internal WordModeForm(List<Word> words, int currentWordIndex)
     {
@@ -31,6 +35,8 @@ namespace test_01_WF_cour_work_
 
     public void ShowNextWord()
     {
+      a = rnd.Next(0, words.Count);
+
       wordToTranslate.Text = words[currentWordIndex].english;
       TOfWord.Text = words[currentWordIndex].transcription;
       answerLine.Clear();
@@ -40,7 +46,7 @@ namespace test_01_WF_cour_work_
 
     private void Check_Click(object sender, EventArgs e)
     {
-      if (answerLine.Text.ToLower().Trim() == words[currentWordIndex].russian.ToLower())
+      if (answerLine.Text.ToLower().Trim() == words[currentWordIndex].ukrainian.ToLower())
       {
         MessageBox.Show("Currect answer!");
         Next_Click(sender, e);
@@ -67,7 +73,7 @@ namespace test_01_WF_cour_work_
     {
       if (currentWordIndex < words.Count - 1)
       {
-        currentWordIndex++;
+        currentWordIndex = a;
         ShowNextWord();
       }
       else

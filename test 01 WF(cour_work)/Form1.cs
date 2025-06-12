@@ -3,33 +3,43 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Net.Configuration;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 using System.IO;
 using FontAwesome.Sharp;
 
 namespace test_01_WF_cour_work_
 {
-  public partial class Form1 : Form
+  public partial class MainForm : Form
   {
     private IconButton currentButton;
     private Panel leftBorder;
     private Form currentChildForm;
     private List<Word> words = new List<Word>();
     private int currentWordIndex = 0;
+    Color MainFormBC;
 
     public delegate void IndexChangedEventHandler(int index);
 
-    public Form1()
+    [DllImport("user32.DLL",EntryPoint = "ReleaseCapture")]
+    private extern static void ReleaseCapture();
+
+    [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+    private extern static void SendMessage(IntPtr hWnd,int wMsg,int wParam,int IParam);
+
+    [DllImport("dwmapi.dll")]
+    private static extern int DwmGetColorizationColor(out uint pcrColorization, [MarshalAs(UnmanagedType.Bool)] out bool pfOpaqueBlend);
+
+    public MainForm()
     {
       InitializeComponent();
+      SetSystemColor();
       LoadData();
+
       leftBorder = new Panel();
       leftBorder.Size = new Size(7, 51);
       LeftMenu.Controls.Add(leftBorder);
+
       HomePage_Click(HomePage, EventArgs.Empty);
     }
 
@@ -51,6 +61,22 @@ namespace test_01_WF_cour_work_
     {
       get => currentWordIndex;
       set => currentWordIndex = value;
+    }
+
+    private void SetSystemColor()
+    {
+      if (DwmGetColorizationColor(out uint color, out bool _) == 0)
+      {
+        byte a = 255;
+        byte r = (byte)(color >> 16);
+        byte g = (byte)(color >> 8);
+        byte b = (byte)(color);
+        MainFormBC = Color.FromArgb(a, r, g, b);
+      }
+      else
+      {
+        BackColor = SystemColors.Control;
+      }
     }
 
     private void LoadData()
@@ -155,10 +181,14 @@ namespace test_01_WF_cour_work_
       ActivateButton(sender, RGBColor.color4);
     }
 
-    private void Exit_Click(object sender, EventArgs e)
+    private void MainForm_Activated(object sender, EventArgs e)
     {
-      Application.Exit();
+      BackColor = MainFormBC;
+    }
 
+    private void MainForm_Deactivated(object sender, EventArgs e)
+    {
+      BackColor = LeftMenu.BackColor;
     }
 
     private void Exit_MouseHover(object sender, EventArgs e)
@@ -168,12 +198,45 @@ namespace test_01_WF_cour_work_
 
     private void Exit_MouseLeave(object sender, EventArgs e)
     {
-      Exit.BackColor = leftBorder.BackColor;
+      Exit.BackColor = TopScreenPanel.BackColor;
     }
-    
+
+    private void TopScreenPanel_MouseDown(object sender, MouseEventArgs e)
+    {
+      if (e.Button == MouseButtons.Left)
+      {
+        ReleaseCapture();
+        SendMessage(Handle, 0x112, 0xf012, 0);
+      }
+    }
+
+    private void ScreenMaximize_Click(object sender, EventArgs e)
+    {
+      if (WindowState == FormWindowState.Maximized)
+      {
+        WindowState = FormWindowState.Normal;
+        Padding = new Padding(2);
+      }
+      else
+      {
+        WindowState = FormWindowState.Maximized;
+        Padding = new Padding(0, 0, 0, 0);
+      }
+    }
+
+    private void ScreenMinimize_Click(object sender, EventArgs e)
+    {
+      WindowState = FormWindowState.Minimized;
+    }
+
     private void Form1_FormClosed(object sender, FormClosedEventArgs e)
     {
-      DataSave.SaveData(CurrentWordIndex);
+      //DataSave.SaveData(CurrentWordIndex);
+    }
+
+    private void Exit_Click(object sender, EventArgs e)
+    {
+      Application.Exit();
     }
   }
 }

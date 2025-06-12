@@ -73,19 +73,9 @@ namespace test_01_WF_cour_work_.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _11151209_dictionary_letters_translation_translate_words_icon__1_ {
+        internal static System.Drawing.Bitmap _8664917_window_minimize_icon {
             get {
-                object obj = ResourceManager.GetObject("11151209_dictionary_letters_translation_translate_words_icon (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _4781838_cancel_close_delete_exit_logout_icon {
-            get {
-                object obj = ResourceManager.GetObject("4781838_cancel_close_delete_exit_logout_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("8664917_window_minimize_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +86,16 @@ namespace test_01_WF_cour_work_.Properties {
         internal static System.Drawing.Bitmap _8665130_bars_data_icon {
             get {
                 object obj = ResourceManager.GetObject("8665130_bars_data_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8673614_ic_fluent_maximize_filled_icon {
+            get {
+                object obj = ResourceManager.GetObject("8673614_ic_fluent_maximize_filled_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
