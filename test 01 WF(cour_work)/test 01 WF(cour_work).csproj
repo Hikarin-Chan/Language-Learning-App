@@ -95,11 +95,11 @@
     <Compile Include="FlashCardsForm.Designer.cs">
       <DependentUpon>FlashCardsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,6 +107,19 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sentence.cs" />
+    <Compile Include="SentenceModeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SentenceModeForm.Designer.cs">
+      <DependentUpon>SentenceModeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomePageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomePageForm.Designer.cs">
+      <DependentUpon>WelcomePageForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Word.cs" />
     <Compile Include="WordMode.cs">
@@ -118,13 +131,19 @@
     <EmbeddedResource Include="FlashCardsForm.resx">
       <DependentUpon>FlashCardsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SentenceModeForm.resx">
+      <DependentUpon>SentenceModeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomePageForm.resx">
+      <DependentUpon>WelcomePageForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WordMode.resx">
       <DependentUpon>WordMode.cs</DependentUpon>
@@ -149,6 +168,7 @@
     <Content Include="Images\8664917_window_minimize_icon.png" />
     <Content Include="Images\8665130_bars_data_icon.png" />
     <Content Include="Images\8673614_ic_fluent_maximize_filled_icon.png" />
+    <Content Include="Images\wallpapersden.com_windows-11-4k-green-glow-3840x2400.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

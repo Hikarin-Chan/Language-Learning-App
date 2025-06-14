@@ -1,0 +1,21 @@
+[
+  { "English": "Hello how are you?", "Ukrainian": "Привіт як ти?" },
+  { "English": "What is your name?", "Ukrainian": "Як тебе звати?" },
+  { "English": "I love programming.", "Ukrainian": "Я люблю програмування." },
+  {
+    "English": "Where is the nearest store?",
+    "Ukrainian": "Де найближчий магазин?"
+  },
+  { "English": "Can you help me?", "Ukrainian": "Чи можеш ти мені допомогти?" },
+  {
+    "English": "I am learning Ukrainian.",
+    "Ukrainian": "Я вивчаю українську мову."
+  },
+  { "English": "What time is it?", "Ukrainian": "Котра година?" },
+  {
+    "English": "I like to read books.",
+    "Ukrainian": "Мені подобається читати книги."
+  },
+  { "English": "It is a beautiful day.", "Ukrainian": "Сьогодні гарний день." },
+  { "English": "Thank you very much!", "Ukrainian": "Дуже дякую!" }
+]

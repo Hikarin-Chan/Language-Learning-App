@@ -12,21 +12,25 @@ using System.Windows.Forms;
 namespace test_01_WF_cour_work_
 {
   public partial class flashCardsForm : Form
-  {    
+  {
+    // ========= Fields ==========
     private int currentWordIndex;
     private List<Word> words;
 
+    // ========= Delegate ==========
     public event MainForm.IndexChangedEventHandler IndexChanged;
 
+    // ========= Constructor ==========
     internal flashCardsForm(List<Word> words, int currentWordIndex)
     {
       InitializeComponent();
       this.words = words;
       this.currentWordIndex = currentWordIndex;
 
-      flashCardOrig.Text = words[currentWordIndex].english;
+      flashCardOrig.Text = words[currentWordIndex].English;
     }
 
+    // ========= Constructor ==========
     private void flashTranslate_Click(object sender, EventArgs e)
     {
       int width = flashTranslate.Size.Width;
@@ -39,7 +43,7 @@ namespace test_01_WF_cour_work_
         }
       }
 
-      flashTranslate.Text = words[currentWordIndex].ukrainian;
+      flashTranslate.Text = words[currentWordIndex].Ukrainian;
 
       for (int i = 0; i < width; i++)
       {

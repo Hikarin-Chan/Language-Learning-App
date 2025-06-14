@@ -12,24 +12,20 @@ namespace test_01_WF_cour_work_
 {
   public partial class MainForm : Form
   {
+    // ========= Fields ==========
     private IconButton currentButton;
     private Panel leftBorder;
     private Form currentChildForm;
     private List<Word> words = new List<Word>();
+    private List<Sentence> sentence = new List<Sentence>();
     private int currentWordIndex = 0;
+    private int currentSentenceIndex = 0;
     Color MainFormBC;
 
+    // ========= Delegate ==========
     public delegate void IndexChangedEventHandler(int index);
 
-    [DllImport("user32.DLL",EntryPoint = "ReleaseCapture")]
-    private extern static void ReleaseCapture();
-
-    [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-    private extern static void SendMessage(IntPtr hWnd,int wMsg,int wParam,int IParam);
-
-    [DllImport("dwmapi.dll")]
-    private static extern int DwmGetColorizationColor(out uint pcrColorization, [MarshalAs(UnmanagedType.Bool)] out bool pfOpaqueBlend);
-
+    // ========= Constructor ==========
     public MainForm()
     {
       InitializeComponent();
@@ -43,6 +39,7 @@ namespace test_01_WF_cour_work_
       HomePage_Click(HomePage, EventArgs.Empty);
     }
 
+    // ========= Structs ==========
     private struct RGBColor
     {
       public static Color color1 = Color.FromArgb(242, 203, 5);
@@ -51,6 +48,7 @@ namespace test_01_WF_cour_work_
       public static Color color4 = Color.FromArgb(242, 48, 48);
     }
 
+    // ========= Properties ==========
     internal List<Word> Words
     {
       get => words;
@@ -62,6 +60,28 @@ namespace test_01_WF_cour_work_
       get => currentWordIndex;
       set => currentWordIndex = value;
     }
+
+    internal List<Sentence> Sentences
+    {
+      get => sentence;
+      set => sentence = value;
+    }
+
+    public int CurrentSentenceIndex
+    {
+      get => currentSentenceIndex;
+      set => currentSentenceIndex = value;
+    }
+
+    // ========= P/Invoke Methods ==========
+    [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+    private extern static void ReleaseCapture();
+
+    [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+    private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int IParam);
+
+    [DllImport("dwmapi.dll")]
+    private static extern int DwmGetColorizationColor(out uint pcrColorization, [MarshalAs(UnmanagedType.Bool)] out bool pfOpaqueBlend);
 
     private void SetSystemColor()
     {
@@ -81,10 +101,12 @@ namespace test_01_WF_cour_work_
 
     private void LoadData()
     {
-      var (loadedWords, loadedCurrentIndex) = DataSave.LoadData();
+      var (loadedWords, loadedWordIndex, loadedSentences, loadedSentenceIndex) = DataSave.LoadData();
 
       Words = loadedWords;
-      CurrentWordIndex = loadedCurrentIndex;
+      CurrentWordIndex = loadedWordIndex;
+      Sentences = loadedSentences;
+      CurrentSentenceIndex = loadedSentenceIndex;
     }
 
     private void ActivateButton(object sender, Color color)
@@ -94,7 +116,7 @@ namespace test_01_WF_cour_work_
       if (sender != null)
       {
         currentButton = (IconButton)sender;
-        currentButton.BackColor = Color.FromArgb(50, 153, 134);
+        currentButton.BackColor = Color.FromArgb(1, 96, 69);
         currentButton.ForeColor = color;
         currentButton.TextAlign = ContentAlignment.MiddleCenter;
         currentButton.IconColor = color;
@@ -105,9 +127,6 @@ namespace test_01_WF_cour_work_
         leftBorder.Location = new Point(0, currentButton.Location.Y);
         leftBorder.Visible = true;
         leftBorder.BringToFront();
-
-        TopScreenPanel.BackColor = color;
-        Exit.BackColor = color;
       }
     }
 
@@ -115,7 +134,7 @@ namespace test_01_WF_cour_work_
     {
       if (currentButton != null)
       {
-        currentButton.BackColor = Color.FromArgb(38, 115, 101);
+        currentButton.BackColor = Color.FromArgb(0, 43, 44);
         currentButton.ForeColor = Color.FromArgb(240, 240, 240);
         currentButton.TextAlign = ContentAlignment.MiddleLeft;
         currentButton.IconColor = Color.FromArgb(240, 240, 240);
@@ -149,6 +168,11 @@ namespace test_01_WF_cour_work_
       {
         flashCardsForm.IndexChanged += WordIndexChanged;
       }
+      
+      if (childForm is SentenceModeForm sentenceModeForm)
+      {
+        sentenceModeForm.IndexChanged += SentenceIndexChanged;
+      }
     }
 
     private void WordIndexChanged(int index)
@@ -156,6 +180,12 @@ namespace test_01_WF_cour_work_
       currentWordIndex = index;
     }
 
+    private void SentenceIndexChanged(int index)
+    {
+      currentSentenceIndex = index;
+    }
+
+    // ========= Events ==========
     private void Flashcards_Click(object sender, EventArgs e)
     {
       ActivateButton(sender, RGBColor.color1);
@@ -174,11 +204,14 @@ namespace test_01_WF_cour_work_
     {
       ActivateButton(sender, RGBColor.color3);
 
+      OpenChildForm(new SentenceModeForm(Sentences, CurrentSentenceIndex));
     }
 
     private void HomePage_Click(object sender, EventArgs e)
     {
       ActivateButton(sender, RGBColor.color4);
+
+      OpenChildForm(new WelcomePageForm());
     }
 
     private void MainForm_Activated(object sender, EventArgs e)
@@ -199,6 +232,26 @@ namespace test_01_WF_cour_work_
     private void Exit_MouseLeave(object sender, EventArgs e)
     {
       Exit.BackColor = TopScreenPanel.BackColor;
+    }
+
+    private void ScreenMinimize_MouseHover(object sender, EventArgs e)
+    {
+      ScreenMinimize.BackColor = Color.FromArgb(1, 96, 69);
+    }
+
+    private void ScreenMinimize_MouseLeave(object sender, EventArgs e)
+    {
+      ScreenMinimize.BackColor = TopScreenPanel.BackColor;
+    }
+
+    private void ScreenMaximize_MouseHover(object sender, EventArgs e)
+    {
+      ScreenMaximize.BackColor = Color.FromArgb(1, 96, 69);
+    }
+
+    private void ScreenMaximize_MouseLeave(object sender, EventArgs e)
+    {
+      ScreenMaximize.BackColor = TopScreenPanel.BackColor;
     }
 
     private void TopScreenPanel_MouseDown(object sender, MouseEventArgs e)
@@ -229,9 +282,9 @@ namespace test_01_WF_cour_work_
       WindowState = FormWindowState.Minimized;
     }
 
-    private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+    private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
     {
-      //DataSave.SaveData(CurrentWordIndex);
+      DataSave.SaveData(CurrentWordIndex, CurrentSentenceIndex);
     }
 
     private void Exit_Click(object sender, EventArgs e)

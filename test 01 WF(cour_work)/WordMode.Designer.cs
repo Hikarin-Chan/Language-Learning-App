@@ -41,7 +41,7 @@
       // answerLine
       // 
       this.answerLine.Anchor = System.Windows.Forms.AnchorStyles.None;
-      this.answerLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(159)))), ((int)(((byte)(5)))));
+      this.answerLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(134)))));
       this.answerLine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
       this.answerLine.Location = new System.Drawing.Point(504, 230);
       this.answerLine.Margin = new System.Windows.Forms.Padding(4);
@@ -53,7 +53,7 @@
       // 
       this.wordToTranslate.Anchor = System.Windows.Forms.AnchorStyles.None;
       this.wordToTranslate.AutoSize = true;
-      this.wordToTranslate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(159)))), ((int)(((byte)(5)))));
+      this.wordToTranslate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(134)))));
       this.wordToTranslate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
       this.wordToTranslate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.wordToTranslate.Location = new System.Drawing.Point(209, 232);
@@ -66,7 +66,7 @@
       // 
       this.checkAnswer.Anchor = System.Windows.Forms.AnchorStyles.None;
       this.checkAnswer.AutoSize = true;
-      this.checkAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(159)))), ((int)(((byte)(5)))));
+      this.checkAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(134)))));
       this.checkAnswer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.checkAnswer.Location = new System.Drawing.Point(340, 340);
       this.checkAnswer.Margin = new System.Windows.Forms.Padding(4);
@@ -75,8 +75,8 @@
       this.checkAnswer.Size = new System.Drawing.Size(120, 50);
       this.checkAnswer.TabIndex = 0;
       this.checkAnswer.Text = "Check";
-      this.checkAnswer.Click += new System.EventHandler(this.Check_Click);
       this.checkAnswer.UseVisualStyleBackColor = false;
+      this.checkAnswer.Click += new System.EventHandler(this.Check_Click);
       // 
       // TOfWord
       // 
@@ -116,7 +116,7 @@
       // wordModePanel
       // 
       this.wordModePanel.AutoSize = true;
-      this.wordModePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(134)))));
+      this.wordModePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
       this.wordModePanel.Controls.Add(this.answerLine);
       this.wordModePanel.Controls.Add(this.tipFlashCard);
       this.wordModePanel.Controls.Add(this.wordToTranslate);

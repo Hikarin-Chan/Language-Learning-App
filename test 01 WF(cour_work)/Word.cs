@@ -9,8 +9,9 @@ namespace test_01_WF_cour_work_
 {
   internal class Word
   {
-    public string english { get; set; }
-    public string ukrainian { get; set; }
-    public string transcription { get; set; }
+    // ========= Properties ==========
+    public string English { get; set; }
+    public string Ukrainian { get; set; }
+    public string Transcription { get; set; }
   }
 }

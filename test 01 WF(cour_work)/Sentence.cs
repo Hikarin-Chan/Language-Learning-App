@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace test_01_WF_cour_work_
 {
-  internal class Data
+  internal class Sentence
   {
     // ========= Properties ==========
-    public int CurrentWordIndex { get; set; } = 0;
-    public int CurrentSentenceIndex { get; set; } = 0;
+    public string English { get; set; }
+    public string Ukrainian { get; set; }
   }
 }

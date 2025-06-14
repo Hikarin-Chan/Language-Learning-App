@@ -39,7 +39,7 @@
       // flashCardPanel
       // 
       this.flashCardPanel.AutoSize = true;
-      this.flashCardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(134)))));
+      this.flashCardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
       this.flashCardPanel.Controls.Add(this.rightArrow);
       this.flashCardPanel.Controls.Add(this.flashCardOrig);
       this.flashCardPanel.Controls.Add(this.flashTranslate);
@@ -54,7 +54,7 @@
       // rightArrow
       // 
       this.rightArrow.Anchor = System.Windows.Forms.AnchorStyles.None;
-      this.rightArrow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(134)))));
+      this.rightArrow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
       this.rightArrow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
       this.rightArrow.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
       this.rightArrow.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
@@ -63,7 +63,7 @@
       this.rightArrow.Location = new System.Drawing.Point(570, 372);
       this.rightArrow.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
       this.rightArrow.Name = "rightArrow";
-      this.rightArrow.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+      this.rightArrow.Padding = new System.Windows.Forms.Padding(3);
       this.rightArrow.Size = new System.Drawing.Size(60, 65);
       this.rightArrow.TabIndex = 12;
       this.rightArrow.TabStop = false;
@@ -71,7 +71,7 @@
       // flashCardOrig
       // 
       this.flashCardOrig.Anchor = System.Windows.Forms.AnchorStyles.None;
-      this.flashCardOrig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
+      this.flashCardOrig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(134)))));
       this.flashCardOrig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.flashCardOrig.Location = new System.Drawing.Point(248, 194);
       this.flashCardOrig.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -83,7 +83,7 @@
       // flashTranslate
       // 
       this.flashTranslate.Anchor = System.Windows.Forms.AnchorStyles.None;
-      this.flashTranslate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
+      this.flashTranslate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(134)))));
       this.flashTranslate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.flashTranslate.Location = new System.Drawing.Point(690, 194);
       this.flashTranslate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

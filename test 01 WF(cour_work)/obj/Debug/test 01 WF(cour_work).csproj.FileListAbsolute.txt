@@ -34,3 +34,5 @@ D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\obj\
 D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\Newtonsoft.Json.dll
 D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\bin\Debug\Newtonsoft.Json.xml
 D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\obj\Debug\test_01_WF_cour_work_.MainForm.resources
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\obj\Debug\test_01_WF_cour_work_.WelcomePageForm.resources
+D:\Code\Csharp\Windows Form App\test 01 WF(cour_work)\test 01 WF(cour_work)\obj\Debug\test_01_WF_cour_work_.SentenceModeForm.resources

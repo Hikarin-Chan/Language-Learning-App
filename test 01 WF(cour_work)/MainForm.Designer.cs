@@ -48,7 +48,7 @@
       // 
       // LeftMenu
       // 
-      this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
+      this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
       this.LeftMenu.Controls.Add(this.HomePage);
       this.LeftMenu.Controls.Add(this.SentanceMode);
       this.LeftMenu.Controls.Add(this.WordMode);
@@ -183,7 +183,7 @@
       // 
       // TopScreenPanel
       // 
-      this.TopScreenPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(115)))), ((int)(((byte)(101)))));
+      this.TopScreenPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
       this.TopScreenPanel.Controls.Add(this.Exit);
       this.TopScreenPanel.Controls.Add(this.ScreenMinimize);
       this.TopScreenPanel.Controls.Add(this.ScreenMaximize);
@@ -231,6 +231,8 @@
       this.ScreenMinimize.TabIndex = 1;
       this.ScreenMinimize.UseVisualStyleBackColor = true;
       this.ScreenMinimize.Click += new System.EventHandler(this.ScreenMinimize_Click);
+      this.ScreenMinimize.MouseLeave += new System.EventHandler(this.ScreenMinimize_MouseLeave);
+      this.ScreenMinimize.MouseHover += new System.EventHandler(this.ScreenMinimize_MouseHover);
       // 
       // ScreenMaximize
       // 
@@ -239,8 +241,9 @@
       this.ScreenMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
       this.ScreenMaximize.FlatAppearance.BorderSize = 0;
       this.ScreenMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.ScreenMaximize.ForeColor = System.Drawing.SystemColors.Control;
       this.ScreenMaximize.IconChar = FontAwesome.Sharp.IconChar.None;
-      this.ScreenMaximize.IconColor = System.Drawing.Color.Black;
+      this.ScreenMaximize.IconColor = System.Drawing.Color.White;
       this.ScreenMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
       this.ScreenMaximize.Location = new System.Drawing.Point(1046, 5);
       this.ScreenMaximize.Name = "ScreenMaximize";
@@ -249,11 +252,13 @@
       this.ScreenMaximize.TabIndex = 0;
       this.ScreenMaximize.UseVisualStyleBackColor = true;
       this.ScreenMaximize.Click += new System.EventHandler(this.ScreenMaximize_Click);
+      this.ScreenMaximize.MouseLeave += new System.EventHandler(this.ScreenMaximize_MouseLeave);
+      this.ScreenMaximize.MouseHover += new System.EventHandler(this.ScreenMaximize_MouseHover);
       // 
       // mainDesktopPanel
       // 
       this.mainDesktopPanel.AutoSize = true;
-      this.mainDesktopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+      this.mainDesktopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(96)))), ((int)(((byte)(69)))));
       this.mainDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
       this.mainDesktopPanel.Location = new System.Drawing.Point(202, 52);
       this.mainDesktopPanel.Name = "mainDesktopPanel";
@@ -275,15 +280,15 @@
       this.Name = "MainForm";
       this.Padding = new System.Windows.Forms.Padding(2);
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-      this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+      this.Activated += new System.EventHandler(this.MainForm_Activated);
+      this.Deactivate += new System.EventHandler(this.MainForm_Deactivated);
+      this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
       this.LeftMenu.ResumeLayout(false);
       this.LeftMenu.PerformLayout();
       this.HideMenu.ResumeLayout(false);
       this.TopScreenPanel.ResumeLayout(false);
       this.ResumeLayout(false);
       this.PerformLayout();
-      this.Activated += new System.EventHandler(this.MainForm_Activated);
-      this.Deactivate += new System.EventHandler(this.MainForm_Deactivated);
 
     }
 
@@ -297,9 +302,9 @@
     private FontAwesome.Sharp.IconButton HomePage;
     private System.Windows.Forms.Panel TopScreenPanel;
     private System.Windows.Forms.Panel mainDesktopPanel;
-    private FontAwesome.Sharp.IconButton ScreenMaximize;
     private FontAwesome.Sharp.IconButton Exit;
     private FontAwesome.Sharp.IconButton ScreenMinimize;
+    private FontAwesome.Sharp.IconButton ScreenMaximize;
   }
 }
 

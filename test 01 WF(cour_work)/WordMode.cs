@@ -17,14 +17,14 @@ namespace test_01_WF_cour_work_
 {
   public partial class WordModeForm : Form
   {
+    // ========= Fields ==========
     private int currentWordIndex = 0;
     private List<Word> words;
-    public int a;
-    Random rnd = new Random();
 
-
+    // ========= Delegate ==========
     public event MainForm.IndexChangedEventHandler IndexCganged;
 
+    // ========= Constructor ==========
     internal WordModeForm(List<Word> words, int currentWordIndex)
     {
       this.words = words;
@@ -33,33 +33,21 @@ namespace test_01_WF_cour_work_
       ShowNextWord();
     }
 
+    // ========= Methods/Invoke ==========
     public void ShowNextWord()
     {
-      a = rnd.Next(0, words.Count);
+      if (words == null || words.Count == 0)
+      {
+        MessageBox.Show("No words available for the word mode.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        return;
+      }
 
-      wordToTranslate.Text = words[currentWordIndex].english;
-      TOfWord.Text = words[currentWordIndex].transcription;
+      
+      wordToTranslate.Text = words[currentWordIndex].English;
+      TOfWord.Text = words[currentWordIndex].Transcription;
       answerLine.Clear();
 
       IndexCganged?.Invoke(currentWordIndex);
-    }
-
-    private void Check_Click(object sender, EventArgs e)
-    {
-      if (answerLine.Text.ToLower().Trim() == words[currentWordIndex].ukrainian.ToLower())
-      {
-        MessageBox.Show("Currect answer!");
-        Next_Click(sender, e);
-        DisableTip();
-      }
-      else
-      {
-        MessageBox.Show("Incurrect answer!");
-        tipFlashCard.Text = "Forgot the word? Use flashcards!";
-        tipFlashCard.Visible = true;
-        tipFlashCard.BackColor = Color.FromArgb(38, 115, 101);
-        answerLine.Clear();
-      }
     }
 
     private void DisableTip()
@@ -73,13 +61,32 @@ namespace test_01_WF_cour_work_
     {
       if (currentWordIndex < words.Count - 1)
       {
-        currentWordIndex = a;
+        currentWordIndex++;
         ShowNextWord();
       }
       else
       {
         MessageBox.Show("Вы завершили все тесты!!!");
         currentWordIndex = 0;
+      }
+    }
+
+    // ========= Events ==========
+    private void Check_Click(object sender, EventArgs e)
+    {
+      if (answerLine.Text.ToLower().Trim() == words[currentWordIndex].Ukrainian.ToLower())
+      {
+        MessageBox.Show("Currect answer!");
+        Next_Click(sender, e);
+        DisableTip();
+      }
+      else
+      {
+        MessageBox.Show("Incurrect answer!");
+        tipFlashCard.Text = "Forgot the word? Use flashcards!";
+        tipFlashCard.Visible = true;
+        tipFlashCard.BackColor = Color.FromArgb(38, 115, 101);
+        answerLine.Clear();
       }
     }
   }
