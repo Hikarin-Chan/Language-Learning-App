@@ -31,7 +31,7 @@
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
       this.LeftMenu = new System.Windows.Forms.Panel();
       this.HomePage = new FontAwesome.Sharp.IconButton();
-      this.SentanceMode = new FontAwesome.Sharp.IconButton();
+      this.SentenceMode = new FontAwesome.Sharp.IconButton();
       this.WordMode = new FontAwesome.Sharp.IconButton();
       this.Flashcards = new FontAwesome.Sharp.IconButton();
       this.HideMenu = new System.Windows.Forms.Panel();
@@ -50,7 +50,7 @@
       // 
       this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
       this.LeftMenu.Controls.Add(this.HomePage);
-      this.LeftMenu.Controls.Add(this.SentanceMode);
+      this.LeftMenu.Controls.Add(this.SentenceMode);
       this.LeftMenu.Controls.Add(this.WordMode);
       this.LeftMenu.Controls.Add(this.Flashcards);
       this.LeftMenu.Controls.Add(this.HideMenu);
@@ -83,29 +83,29 @@
       this.HomePage.UseVisualStyleBackColor = true;
       this.HomePage.Click += new System.EventHandler(this.HomePage_Click);
       // 
-      // SentanceMode
+      // SentenceMode
       // 
-      this.SentanceMode.AutoSize = true;
-      this.SentanceMode.Dock = System.Windows.Forms.DockStyle.Top;
-      this.SentanceMode.FlatAppearance.BorderSize = 0;
-      this.SentanceMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.SentanceMode.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-      this.SentanceMode.ForeColor = System.Drawing.SystemColors.Control;
-      this.SentanceMode.IconChar = FontAwesome.Sharp.IconChar.AlignLeft;
-      this.SentanceMode.IconColor = System.Drawing.SystemColors.Control;
-      this.SentanceMode.IconFont = FontAwesome.Sharp.IconFont.Auto;
-      this.SentanceMode.IconSize = 40;
-      this.SentanceMode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-      this.SentanceMode.Location = new System.Drawing.Point(0, 152);
-      this.SentanceMode.Name = "SentanceMode";
-      this.SentanceMode.Padding = new System.Windows.Forms.Padding(10, 2, 3, 3);
-      this.SentanceMode.Size = new System.Drawing.Size(200, 51);
-      this.SentanceMode.TabIndex = 14;
-      this.SentanceMode.Text = "Sentance Mode";
-      this.SentanceMode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-      this.SentanceMode.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-      this.SentanceMode.UseVisualStyleBackColor = true;
-      this.SentanceMode.Click += new System.EventHandler(this.SentanceMode_Click);
+      this.SentenceMode.AutoSize = true;
+      this.SentenceMode.Dock = System.Windows.Forms.DockStyle.Top;
+      this.SentenceMode.FlatAppearance.BorderSize = 0;
+      this.SentenceMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.SentenceMode.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.SentenceMode.ForeColor = System.Drawing.SystemColors.Control;
+      this.SentenceMode.IconChar = FontAwesome.Sharp.IconChar.AlignLeft;
+      this.SentenceMode.IconColor = System.Drawing.SystemColors.Control;
+      this.SentenceMode.IconFont = FontAwesome.Sharp.IconFont.Auto;
+      this.SentenceMode.IconSize = 40;
+      this.SentenceMode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.SentenceMode.Location = new System.Drawing.Point(0, 152);
+      this.SentenceMode.Name = "SentenceMode";
+      this.SentenceMode.Padding = new System.Windows.Forms.Padding(10, 2, 3, 3);
+      this.SentenceMode.Size = new System.Drawing.Size(200, 51);
+      this.SentenceMode.TabIndex = 14;
+      this.SentenceMode.Text = "Sentence Mode";
+      this.SentenceMode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.SentenceMode.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+      this.SentenceMode.UseVisualStyleBackColor = true;
+      this.SentenceMode.Click += new System.EventHandler(this.SentanceMode_Click);
       // 
       // WordMode
       // 
@@ -151,7 +151,6 @@
       this.Flashcards.Size = new System.Drawing.Size(200, 51);
       this.Flashcards.TabIndex = 12;
       this.Flashcards.Text = "Flashcards";
-      this.Flashcards.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
       this.Flashcards.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
       this.Flashcards.UseVisualStyleBackColor = true;
       this.Flashcards.Click += new System.EventHandler(this.Flashcards_Click);
@@ -167,7 +166,6 @@
       // 
       // Menu
       // 
-      this.Menu.Anchor = System.Windows.Forms.AnchorStyles.None;
       this.Menu.BackgroundImage = global::test_01_WF_cour_work_.Properties.Resources._8665130_bars_data_icon;
       this.Menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
       this.Menu.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -175,11 +173,12 @@
       this.Menu.IconChar = FontAwesome.Sharp.IconChar.None;
       this.Menu.IconColor = System.Drawing.Color.Black;
       this.Menu.IconFont = FontAwesome.Sharp.IconFont.Auto;
-      this.Menu.Location = new System.Drawing.Point(13, 13);
+      this.Menu.Location = new System.Drawing.Point(12, 12);
       this.Menu.Name = "Menu";
       this.Menu.Size = new System.Drawing.Size(25, 25);
       this.Menu.TabIndex = 0;
       this.Menu.UseVisualStyleBackColor = true;
+      this.Menu.Click += new System.EventHandler(this.MinimizeMenu_Click);
       // 
       // TopScreenPanel
       // 
@@ -296,7 +295,7 @@
     private System.Windows.Forms.Panel LeftMenu;
     private System.Windows.Forms.Panel HideMenu;
     private FontAwesome.Sharp.IconButton Flashcards;
-    private FontAwesome.Sharp.IconButton SentanceMode;
+    private FontAwesome.Sharp.IconButton SentenceMode;
     private FontAwesome.Sharp.IconButton WordMode;
     private FontAwesome.Sharp.IconButton Menu;
     private FontAwesome.Sharp.IconButton HomePage;

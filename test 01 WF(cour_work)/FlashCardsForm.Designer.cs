@@ -47,8 +47,8 @@
       this.flashCardPanel.Location = new System.Drawing.Point(0, 0);
       this.flashCardPanel.Margin = new System.Windows.Forms.Padding(0);
       this.flashCardPanel.Name = "flashCardPanel";
-      this.flashCardPanel.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
-      this.flashCardPanel.Size = new System.Drawing.Size(1200, 808);
+      this.flashCardPanel.Padding = new System.Windows.Forms.Padding(20, 19, 20, 19);
+      this.flashCardPanel.Size = new System.Drawing.Size(1600, 962);
       this.flashCardPanel.TabIndex = 9;
       // 
       // rightArrow
@@ -59,12 +59,12 @@
       this.rightArrow.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
       this.rightArrow.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
       this.rightArrow.IconFont = FontAwesome.Sharp.IconFont.Solid;
-      this.rightArrow.IconSize = 60;
-      this.rightArrow.Location = new System.Drawing.Point(570, 372);
-      this.rightArrow.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+      this.rightArrow.IconSize = 77;
+      this.rightArrow.Location = new System.Drawing.Point(760, 443);
+      this.rightArrow.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
       this.rightArrow.Name = "rightArrow";
-      this.rightArrow.Padding = new System.Windows.Forms.Padding(3);
-      this.rightArrow.Size = new System.Drawing.Size(60, 65);
+      this.rightArrow.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.rightArrow.Size = new System.Drawing.Size(80, 77);
       this.rightArrow.TabIndex = 12;
       this.rightArrow.TabStop = false;
       // 
@@ -73,10 +73,10 @@
       this.flashCardOrig.Anchor = System.Windows.Forms.AnchorStyles.None;
       this.flashCardOrig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(134)))));
       this.flashCardOrig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.flashCardOrig.Location = new System.Drawing.Point(248, 194);
-      this.flashCardOrig.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+      this.flashCardOrig.Location = new System.Drawing.Point(331, 231);
+      this.flashCardOrig.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
       this.flashCardOrig.Name = "flashCardOrig";
-      this.flashCardOrig.Size = new System.Drawing.Size(262, 420);
+      this.flashCardOrig.Size = new System.Drawing.Size(349, 500);
       this.flashCardOrig.TabIndex = 11;
       this.flashCardOrig.UseVisualStyleBackColor = false;
       // 
@@ -85,26 +85,26 @@
       this.flashTranslate.Anchor = System.Windows.Forms.AnchorStyles.None;
       this.flashTranslate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(134)))));
       this.flashTranslate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.flashTranslate.Location = new System.Drawing.Point(690, 194);
-      this.flashTranslate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+      this.flashTranslate.Location = new System.Drawing.Point(920, 231);
+      this.flashTranslate.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
       this.flashTranslate.Name = "flashTranslate";
-      this.flashTranslate.Size = new System.Drawing.Size(262, 420);
+      this.flashTranslate.Size = new System.Drawing.Size(349, 500);
       this.flashTranslate.TabIndex = 10;
       this.flashTranslate.UseVisualStyleBackColor = false;
       this.flashTranslate.Click += new System.EventHandler(this.flashTranslate_Click);
       // 
       // flashCardsForm
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.AutoSize = true;
       this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-      this.ClientSize = new System.Drawing.Size(1200, 808);
+      this.ClientSize = new System.Drawing.Size(1600, 962);
       this.Controls.Add(this.flashCardPanel);
-      this.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
       this.ForeColor = System.Drawing.SystemColors.Control;
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-      this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+      this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
       this.Name = "flashCardsForm";
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "FlashCardsForm";

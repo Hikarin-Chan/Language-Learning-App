@@ -105,7 +105,7 @@ namespace test_01_WF_cour_work_.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wallpapersden_com_windows_11_4k_green_glow_3840x2400 {
             get {
-                object obj = ResourceManager.GetObject("wallpapersden.com_windows-11-4k-green-glow-3840x2400", resourceCulture);
+                object obj = ResourceManager.GetObject("wallpapersden.com_windows-11-4k-green-glow_3840x2400", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

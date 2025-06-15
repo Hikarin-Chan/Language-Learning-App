@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using System.IO;
 using FontAwesome.Sharp;
 
 namespace test_01_WF_cour_work_
 {
   public partial class MainForm : Form
   {
+    //WelcomeTitle problem
+
     // ========= Fields ==========
     private IconButton currentButton;
     private Panel leftBorder;
@@ -21,6 +20,7 @@ namespace test_01_WF_cour_work_
     private int currentWordIndex = 0;
     private int currentSentenceIndex = 0;
     Color MainFormBC;
+    private bool minimizeMenu = false;
 
     // ========= Delegate ==========
     public delegate void IndexChangedEventHandler(int index);
@@ -99,6 +99,49 @@ namespace test_01_WF_cour_work_
       }
     }
 
+    private void SetMenuSize()
+    {
+      if (minimizeMenu)
+      {
+        LeftMenu.Width = 60;
+        foreach (Control control in LeftMenu.Controls)
+        {
+          if (control is IconButton iconButton)
+          {
+            iconButton.ImageAlign = ContentAlignment.MiddleCenter;
+            iconButton.Text = string.Empty;
+          }
+        }
+      }
+      else
+      {
+        LeftMenu.Width = 200;
+        foreach (Control control in LeftMenu.Controls)
+        {
+          if (control is IconButton iconButton)
+          {
+            iconButton.ImageAlign = ContentAlignment.MiddleLeft;
+            if (iconButton.Name is "Flashcards")
+            {
+              iconButton.Text = "Flashcards";
+            }
+            else if (iconButton.Name is "WordMode")
+            {
+              iconButton.Text = "Word Mode";
+            }
+            else if (iconButton.Name is "SentenceMode")
+            {
+              iconButton.Text = "Sentence Mode";
+            }
+            else if (iconButton.Name is "HomePage")
+            {
+              iconButton.Text = "Home";
+            }
+          }
+        }
+      }
+    }
+
     private void LoadData()
     {
       var (loadedWords, loadedWordIndex, loadedSentences, loadedSentenceIndex) = DataSave.LoadData();
@@ -115,13 +158,20 @@ namespace test_01_WF_cour_work_
 
       if (sender != null)
       {
-        currentButton = (IconButton)sender;
-        currentButton.BackColor = Color.FromArgb(1, 96, 69);
-        currentButton.ForeColor = color;
-        currentButton.TextAlign = ContentAlignment.MiddleCenter;
-        currentButton.IconColor = color;
-        currentButton.TextImageRelation = TextImageRelation.TextBeforeImage;
-        currentButton.ImageAlign = ContentAlignment.MiddleRight;
+        if (minimizeMenu)
+        {
+          currentButton = (IconButton)sender;
+          currentButton.BackColor = Color.FromArgb(1, 96, 69);
+          currentButton.ForeColor = color;
+          currentButton.IconColor = color;
+        }
+        else
+        {
+          currentButton = (IconButton)sender;
+          currentButton.BackColor = Color.FromArgb(1, 96, 69);
+          currentButton.ForeColor = color;
+          currentButton.IconColor = color;
+        }
 
         leftBorder.BackColor = color;
         leftBorder.Location = new Point(0, currentButton.Location.Y);
@@ -186,6 +236,20 @@ namespace test_01_WF_cour_work_
     }
 
     // ========= Events ==========
+    private void MinimizeMenu_Click(object sender, EventArgs e)
+    {
+      if (minimizeMenu)
+      {
+        minimizeMenu = false;
+        SetMenuSize();
+      }
+      else
+      {
+        minimizeMenu = true;
+        SetMenuSize();
+      }
+    }
+
     private void Flashcards_Click(object sender, EventArgs e)
     {
       ActivateButton(sender, RGBColor.color1);
@@ -269,11 +333,21 @@ namespace test_01_WF_cour_work_
       {
         WindowState = FormWindowState.Normal;
         Padding = new Padding(2);
+        if (currentChildForm is WelcomePageForm welcomePageForm)
+        {
+          welcomePageForm.WelcomeTitle.AutoSize = true;
+          welcomePageForm.WelcomeTitle.Font = new Font("Ubuntu", 48, FontStyle.Bold);
+        }
       }
       else
       {
         WindowState = FormWindowState.Maximized;
         Padding = new Padding(0, 0, 0, 0);
+        if (currentChildForm is WelcomePageForm welcomePageForm)
+        {
+          welcomePageForm.WelcomeTitle.AutoSize = true;
+          welcomePageForm.WelcomeTitle.Font = new Font("Ubuntu", 60, FontStyle.Bold);
+        }
       }
     }
 

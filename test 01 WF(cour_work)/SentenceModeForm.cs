@@ -87,6 +87,7 @@ namespace test_01_WF_cour_work_
 
       for (int i = 0; i < buttonCount; i++)
       {
+        buttons[i].Anchor = AnchorStyles.None;
         if (i == 0)
         {
           buttons[i].Location = new Point(100 + (i * 110) + 100, 300);

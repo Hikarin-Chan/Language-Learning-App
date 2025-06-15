@@ -37,7 +37,7 @@
       this.WelcomeTitle.BackColor = System.Drawing.Color.Transparent;
       this.WelcomeTitle.Font = new System.Drawing.Font("Ubuntu", 47.99999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
       this.WelcomeTitle.ForeColor = System.Drawing.Color.Green;
-      this.WelcomeTitle.Location = new System.Drawing.Point(370, 120);
+      this.WelcomeTitle.Location = new System.Drawing.Point(370, 220);
       this.WelcomeTitle.Name = "WelcomeTitle";
       this.WelcomeTitle.Padding = new System.Windows.Forms.Padding(2);
       this.WelcomeTitle.Size = new System.Drawing.Size(320, 90);
@@ -64,6 +64,7 @@
     }
 
     #endregion
-    private System.Windows.Forms.Label WelcomeTitle;
+
+    public System.Windows.Forms.Label WelcomeTitle;
   }
 }
