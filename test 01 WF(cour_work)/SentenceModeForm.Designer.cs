@@ -39,7 +39,7 @@
       this.OriginSentence.AutoSize = true;
       this.OriginSentence.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
       this.OriginSentence.ForeColor = System.Drawing.SystemColors.Control;
-      this.OriginSentence.Location = new System.Drawing.Point(428, 197);
+      this.OriginSentence.Location = new System.Drawing.Point(455, 194);
       this.OriginSentence.Name = "OriginSentence";
       this.OriginSentence.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
       this.OriginSentence.Size = new System.Drawing.Size(4, 27);
@@ -51,7 +51,7 @@
       this.TranslateSentence.AutoSize = true;
       this.TranslateSentence.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
       this.TranslateSentence.ForeColor = System.Drawing.SystemColors.Control;
-      this.TranslateSentence.Location = new System.Drawing.Point(428, 260);
+      this.TranslateSentence.Location = new System.Drawing.Point(455, 257);
       this.TranslateSentence.Name = "TranslateSentence";
       this.TranslateSentence.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
       this.TranslateSentence.Size = new System.Drawing.Size(4, 27);

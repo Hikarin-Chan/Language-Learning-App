@@ -19,6 +19,7 @@ namespace test_01_WF_cour_work_
     private int currentSentenceIndex;
     private string currentSentence = "";
     private List<Button> buttons = new List<Button>();
+    static int maxWin;
 
     // ========= Delegate ==========
     public event IndexChangedEventHandler IndexChanged;
@@ -72,6 +73,18 @@ namespace test_01_WF_cour_work_
       SetupRundomButtons();
     }
 
+    public void MaxWin()
+    {
+      maxWin = 200;
+      SetupRundomButtons();
+    }
+
+    public void NormWin()
+    {
+      maxWin = 0;
+      SetupRundomButtons();
+    }
+
     private void SetupRundomButtons()
     {
       Random random = new Random();
@@ -87,15 +100,16 @@ namespace test_01_WF_cour_work_
 
       for (int i = 0; i < buttonCount; i++)
       {
-        buttons[i].Anchor = AnchorStyles.None;
         if (i == 0)
         {
-          buttons[i].Location = new Point(100 + (i * 110) + 100, 300);
+          buttons[i].Location = new Point(100 + (i * 110) + 100, 300 + maxWin);
           Controls.Add(buttons[i]);
+          buttons[i].Anchor = AnchorStyles.None;
           continue;
         }
-        buttons[i].Location = new Point(buttons[i - 1].Location.X + buttons[i - 1].Width + 15, 300);
-        
+        buttons[i].Location = new Point(buttons[i - 1].Location.X + buttons[i - 1].Width + 15, 300 + maxWin);
+        buttons[i].Anchor = AnchorStyles.None;
+
         Controls.Add(buttons[i]);
       }
     }

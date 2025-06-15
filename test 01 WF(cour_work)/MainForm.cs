@@ -222,6 +222,14 @@ namespace test_01_WF_cour_work_
       if (childForm is SentenceModeForm sentenceModeForm)
       {
         sentenceModeForm.IndexChanged += SentenceIndexChanged;
+        if (WindowState == FormWindowState.Maximized)
+        {
+          sentenceModeForm.MaxWin();
+        }
+        else
+        {
+          sentenceModeForm.NormWin();
+        }
       }
     }
 
@@ -338,6 +346,11 @@ namespace test_01_WF_cour_work_
           welcomePageForm.WelcomeTitle.AutoSize = true;
           welcomePageForm.WelcomeTitle.Font = new Font("Ubuntu", 48, FontStyle.Bold);
         }
+
+        if (currentChildForm is SentenceModeForm sentenceModeForm)
+        {
+          sentenceModeForm.NormWin();
+        }
       }
       else
       {
@@ -347,6 +360,11 @@ namespace test_01_WF_cour_work_
         {
           welcomePageForm.WelcomeTitle.AutoSize = true;
           welcomePageForm.WelcomeTitle.Font = new Font("Ubuntu", 60, FontStyle.Bold);
+        }
+
+        if (currentChildForm is SentenceModeForm sentenceModeForm)
+        {
+          sentenceModeForm.MaxWin();
         }
       }
     }
